@@ -1,6 +1,6 @@
 $(function() {
 
-	jQuery(document).ready(function($){
+	$(document).ready(function($){
 
     // Hide all panels to start
     var panels = $('.accordion > dd').hide();
