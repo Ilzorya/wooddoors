@@ -63,23 +63,21 @@
     margin-bottom: 20px
     border: 1px solid $border_color
     cursor: pointer
+    position: relative
 
     a
       padding: 23px 500px 20px 0px
       color: $black_font
 
-      .ic_arrow
+    .arrow_wrapper
+      height: 20px
+      width: 20px
+      float: right
+      right: 20px
+      position: absolute
 
-        &:active
-          transform: rotate(180deg)
-        &::after
-          content: ""
-          background-image: url(../img/ic_arrow.svg)
-          background-repeat: no-repeat
-          height: 20px
-          width: 20px
-          float: right
-          background-position: center
+    .ic_arrow_rotated
+      transform: rotate(180deg)
 
   dd
     margin-left: 20px
