@@ -1,23 +1,30 @@
 footer
-  background-color: grey
+  background-color: #eaeaea
 
-.foo_top, .foo_bottom
-  padding: 30px 0px
+.foo_top
+  padding-top: 50px
+  padding-bottom: 25px
+  position: relative
 
-.logo_wrapper
+.foo_bottom
+    padding-top: 25px
+    padding-bottom: 50px
+
+.bottom_logo_wrapper
   top: 40px
+  position: static
 
-.logo
+.logo_black
   background-repeat: no-repeat
-  background-image: url("../img/logo.svg")
-  background-position: center center
+  background-image: url("../img/logo_black.svg")
   height: 40px
   background-size: contain
   display: block
 
-nav
-  top: 20px
-  text-align: centers
+.foo_nav_wrapper
+  position: relative
+  top: 8px
+  text-align: center
 
   a
     color: white
@@ -27,11 +34,20 @@ nav
     font-weight: 300
     display: inline
     float: none
-    padding-left: 40px
-    padding-right: 40px
+    color: $black_font
+    padding-left: 20px
+    padding-right: 20px
+    transition: 0.3s
 
     &:hover
       color: #ccc
+
+.social_icons_wrapper a
+  margin-left: 10px
+  transition: 0.3s
+
+  &:hover
+    opacity: 0.8
 
 .location
   float: left
