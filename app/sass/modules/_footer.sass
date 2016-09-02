@@ -1,71 +1,88 @@
 footer
-  background-color: #eaeaea
+  background-color: white
 
 .foo_top
-  padding-top: 50px
-  padding-bottom: 25px
+  padding: 50px 0
   position: relative
+
+  .bottom_logo_wrapper
+    top: 40px
+    position: static
+
+    .logo_black
+      background-repeat: no-repeat
+      background-image: url("../img/logo_black.svg")
+      height: 40px
+      background-size: contain
+      display: block
+
+  .foo_nav_wrapper
+    position: relative
+    top: 8px
+    text-align: center
+
+    a
+      color: white
+      font-size: em(14px)
+      text-decoration: none
+      letter-spacing: 0.3px
+      font-weight: 300
+      display: inline
+      float: none
+      color: $black_font
+      padding-left: 20px
+      padding-right: 20px
+      transition: 0.3s
+
+      &:hover
+        color: #ccc
+
+  .social_icons_wrapper
+    .social_icons
+      float: right
+
+    a
+      margin-left: 10px
+      transition: 0.3s
+
+      &:hover
+        opacity: 0.8
+
 
 .foo_bottom
-    padding-top: 25px
-    padding-bottom: 50px
+  padding: 50px 0
+  font-size: em(14px)
 
-.bottom_logo_wrapper
-  top: 40px
-  position: static
+  .rights
+  color: $black_font
 
-.logo_black
-  background-repeat: no-repeat
-  background-image: url("../img/logo_black.svg")
-  height: 40px
-  background-size: contain
-  display: block
+  .location_wrapper
+    text-align: center
 
-.foo_nav_wrapper
-  position: relative
-  top: 8px
-  text-align: center
+    .location
+      display: inline-block
 
-  a
-    color: white
-    font-size: em(14px)
-    text-decoration: none
-    letter-spacing: 0.3px
-    font-weight: 300
-    display: inline
-    float: none
-    color: $black_font
-    padding-left: 20px
-    padding-right: 20px
-    transition: 0.3s
+      .ic_location
+        float: left
 
-    &:hover
-      color: #ccc
+      p
+        padding-left: 54px
+        margin: 0
+        color: $black_font
+        text-align: left
 
-.social_icons_wrapper a
-  margin-left: 10px
-  transition: 0.3s
+  .bottom_phone_wrapper
+    img
+      float: left
 
-  &:hover
-    opacity: 0.8
+    .bottom_phone
+      float: right
 
-.location
-  float: left
+    ul
+      padding-left: 54px
+      margin: 0
 
-.location p
-  padding-left: 54px
-
-.phone_wrapper
-  top: 30px
-
-  img
-    float: left
-
-  ul
-    padding-left: 54px
-    margin: 0
-
-  li
-    list-style: none
-    color: white
-    line-height: 27px
+      li
+        list-style: none
+        color: $black_font
+        line-height: 27px
