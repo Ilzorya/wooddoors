@@ -1,3 +1,88 @@
 footer
-  margin-top: 70px
-  background-color: grey
+  background-color: white
+
+.foo_top
+  padding: 50px 0
+  position: relative
+
+  .bottom_logo_wrapper
+    top: 40px
+    position: static
+
+    .logo_black
+      background-repeat: no-repeat
+      background-image: url("../img/logo_black.svg")
+      height: 40px
+      background-size: contain
+      display: block
+
+  .foo_nav_wrapper
+    position: relative
+    top: 8px
+    text-align: center
+
+    a
+      color: white
+      font-size: em(14px)
+      text-decoration: none
+      letter-spacing: 0.3px
+      font-weight: 300
+      display: inline
+      float: none
+      color: $black_font
+      padding-left: 20px
+      padding-right: 20px
+      transition: 0.3s
+
+      &:hover
+        color: #ccc
+
+  .social_icons_wrapper
+    .social_icons
+      float: right
+
+    a
+      margin-left: 10px
+      transition: 0.3s
+
+      &:hover
+        opacity: 0.8
+
+
+.foo_bottom
+  padding: 50px 0
+  font-size: em(14px)
+
+  .rights
+  color: $black_font
+
+  .location_wrapper
+    text-align: center
+
+    .location
+      display: inline-block
+
+      .ic_location
+        float: left
+
+      p
+        padding-left: 54px
+        margin: 0
+        color: $black_font
+        text-align: left
+
+  .bottom_phone_wrapper
+    img
+      float: left
+
+    .bottom_phone
+      float: right
+
+    ul
+      padding-left: 54px
+      margin: 0
+
+      li
+        list-style: none
+        color: $black_font
+        line-height: 27px
