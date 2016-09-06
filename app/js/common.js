@@ -9,14 +9,20 @@ $(function() {
     // panels.first().show();
 
     // On click of panel title
-    $('.accordion > dt > a').click(function() {
+    $('.accordion > dt').on('click', function(e) {
+			e.preventDefault();
       var $this = $(this);
 
       // Slide up all other panels
-      panels.slideUp();
+      // panels.slideUp();
+			$this.siblings('dt').next().slideUp();
+
 
       //Slide down target panel
-      $this.parent().next().slideDown();
+      $this.next('dd').slideDown();
+
+			$this.find('.arrow').addClass('arrow-up');
+			$this.siblings().find('.arrow').removeClass('arrow-up');
 
       return false;
     });
