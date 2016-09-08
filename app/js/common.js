@@ -2,16 +2,12 @@ $(function() {
 
 	$(document).ready(function($){
 
-    // Hide all panels to start
+    // accordion
     var panels = $('.accordion > dd').hide();
 
-    // Show first panel on load (optional). Remove if you want
-    // panels.first().show();
-
-    // On click of panel title
     $('.accordion > dt').on('click', function(e) {
 			e.preventDefault();
-			
+
       var $this 			= $(this),
 			    description = $this.next('dd');
 
@@ -30,9 +26,20 @@ $(function() {
 
 			$this.siblings().find('.arrow').removeClass('arrow-up');
 
-
       return false;
     });
-  });
 
+		$('.mob_menu_button').on('click', function(){
+			$('nav').addClass('menu_show');
+			$('.close_icon')
+			.addClass('close_icon_show')
+			.removeClass('close_icon');
+		});
+
+		$('.close_icon_show').on('click', function(){
+			$('nav').removeClass('menu_show');
+		});
+
+
+  });
 });
