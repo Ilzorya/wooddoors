@@ -9,6 +9,10 @@
 	.mob_menu_button_wrapper
 		display: none
 
+	.close_icon
+		display: none
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -24,7 +28,7 @@
 @media only screen and (max-width : 767px)
 	/**/
 
-	// mobile nav
+	// mobile nav show and hide
 	nav
 		display: none
 
@@ -46,7 +50,8 @@
 			line-height: 60px
 			font-weight: 300
 			font:
-				size: em(30px)
+				size: em(36px)
+				weight: 700
 				family: $merriweather
 
 	.close_icon
@@ -56,36 +61,35 @@
 		display: block
 		position: absolute
 		z-index: 101
-		top: 30px
-		right: 30px
-		width: 24px
-		height: 24px
+		top: 25px
+		right: 25px
 
+		img
+			width: 30px
 
 	// mobile nav
 
 	.logo
-	  background-position: left
+		background-position: left
 
 	.mob_menu_button_wrapper
 		display: block
+		position: absolute
+		top: 35px
+		right: 20px
 
 		.mob_menu_button
-			position: absolute
-			margin-top: 30px
-			right: 20px
-			padding: 0px 40px
+			padding: 13px 40px
 			color: white
 			letter-spacing: 0.4px
 			line-height: 3.5
-			border: 3px solid white
+			border: 2px solid white
 			font:
 			  weight: 700
 			  size: em(16px)
 
 	.item_vertical
 		padding-bottom: 60px
-
 
 	.scroll_mouse
 		display: none
@@ -95,20 +99,17 @@
 @media only screen and (max-width : 480px)
 	/**/
 
+	.logo_wrapper
+		top: 30px
+		left: 0
+		padding: 0
+
 	.head_content_wrapper
 		padding: 0	30px
 
-
 	.mob_menu_button_wrapper
-		.mob_menu_button
-			right: 10px
-			padding: 0 30px
-
-	.logo_wrapper
-		left: -5px
-
-		.logo
-			background-position: left
+		top: 25px
+		right: 30px
 
 	.head_wrapper_lp
 		height: 500px
@@ -124,21 +125,14 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
+
 	.mob_menu_button_wrapper
-		.mob_menu_button
-			right: 10px
-			padding: 0 30px
+		top: 20px
+		right: 55px
 
 	.logo_wrapper
-		left: -5px
-
-		.logo
-			background-position: center center
-
-
-
-
-
+		top: 27px
+		left: -10px
 
 /*==========  Mobile First  ==========*/
 
@@ -153,7 +147,7 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
+@media only screen and (min-width : 767px)
 	/**/
 
 
@@ -166,4 +160,7 @@
 @media only screen and (min-width : 1200px)
 	/**/
 	.mob_menu_button_wrapper
+		display: none
+
+	.close_icon
 		display: none
