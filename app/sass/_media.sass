@@ -3,9 +3,8 @@
 
 /*==========  Desktop First  ==========*/
 
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+
 	.mob_menu_button_wrapper
 		display: none
 
@@ -13,25 +12,25 @@
 		display: none
 
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
 
 	.item_vertical
-		padding-bottom: 60px
+		margin-bottom: 60px
 
 	.close_icon
 		display: none
 
+	.foo_top .foo_nav_wrapper a
+		padding-left: 10px
 
-/* Small Devices, Tablets */
+
 @media only screen and (max-width : 767px)
-	/**/
 
-	// mobile nav show and hide
-	nav
+	// head
+
+	.head_nav
 		display: none
-
+§
 	.menu_show
 		display: block
 		background-color: $dark-bg
@@ -42,6 +41,7 @@
 		padding: 100px 50px
 		margin-left: -15px
 		margin-top: -20px
+		transition: all 0.3s
 
 		a
 			width: 100%
@@ -67,8 +67,6 @@
 		img
 			width: 30px
 
-	// mobile nav
-
 	.logo
 		background-position: left
 
@@ -88,16 +86,74 @@
 			  weight: 700
 			  size: em(16px)
 
-	.item_vertical
-		padding-bottom: 60px
-
 	.scroll_mouse
 		display: none
 
+	// head end
 
-/* Extra Small Devices, Phones */
+
+	.form_wrapper
+		padding: 70px	70px
+
+	.accordion
+		padding: 0 50px
+
+	.review_item
+		padding: 60px 40px
+
+
+	//footer
+
+	.foo_top, .foo_bottom
+		text-align: center
+
+	.foo_top .bottom_logo_wrapper .logo_black
+		background-position: center
+
+	.foo_top
+		padding-top: 100px
+		padding-bottom: 0
+
+	.foo_bottom
+		padding: 0
+
+	.bottom_logo_wrapper, .foo_nav_wrapper, .social_icons_wrapper, .rights, .location_wrapper, .bottom_phone_wrapper
+		padding-bottom: 100px
+
+	.foo_top .foo_nav_wrapper a
+		display: block
+		line-height: 5
+		width: 100%
+		padding: 0
+		font-size: em(16px)
+
+	.foo_top .social_icons_wrapper .social_icons
+		float: none
+
+	.foo_bottom .bottom_phone_wrapper .bottom_phone
+		display: inline-block
+		float: none
+
+	.foo_bottom
+		font-size: em(16px)
+		display: flex
+		flex-direction: column
+
+		.rights
+			font-size: em(14px)
+			opacity: 0.5
+			order: 3
+
+		.location_wrapper
+			order: 2
+
+		.bottom_phone_wrapper
+			order: 1
+
+	//footer end
+
+
 @media only screen and (max-width : 480px)
-	/**/
 
 	.logo_wrapper
 		top: 30px
@@ -118,13 +174,10 @@
 		.header_title
 			padding: 30px 0
 
+	.form_wrapper
+		padding: 70px	30px
 
-
-
-
-/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
 
 	.mob_menu_button_wrapper
 		top: 20px
@@ -133,6 +186,9 @@
 	.logo_wrapper
 		top: 27px
 		left: -10px
+
+	.accordion
+		padding: 0 30px 60px
 
 /*==========  Mobile First  ==========*/
 

@@ -40,6 +40,5 @@ $(function() {
 			$('nav').removeClass('menu_show');
 		});
 
-
   });
 });
