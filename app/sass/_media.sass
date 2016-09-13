@@ -1,5 +1,6 @@
 @import "bourbon"
 @import "vars"
+@import "mixins"
 
 /*==========  Desktop First  ==========*/
 
@@ -17,64 +18,62 @@
 	.item_vertical
 		margin-bottom: 60px
 
-	.close_icon
+	.close_icon, .phone_wrapper
 		display: none
 
 	.foo_top .foo_nav_wrapper a
 		padding-left: 10px
+
+	.btn_cta_wrapper
+		right: 20px
 
 
 @media only screen and (max-width : 767px)
 
 	// head
 
-	.head_nav
+	@keyframes menu_appear
+		from
+			left: 100px
+			opacity: 0
+		to
+			left: 15px
+			opacity: 1
+
+	@keyframes close_icon_appear
+		from
+			right: 0
+			opacity: 0
+			transform: rotate(90deg)
+		to
+			right: 30px
+			opacity: 1
+			transform: rotate(0deg)
+
+	.head_nav, .phone_wrapper, .close_icon, .scroll_mouse
 		display: none
-§
-	.menu_show
-		display: block
-		background-color: $dark-bg
-		z-index: 100
-		width: 100%
-		height: 100%
-		position: absolute
-		padding: 100px 50px
-		margin-left: -15px
-		margin-top: -20px
-		transition: all 0.3s
-
-		a
-			width: 100%
-			color: #fff
-			letter-spacing: .3px
-			line-height: 60px
-			font-weight: 300
-			font:
-				size: em(36px)
-				weight: 700
-				family: $merriweather
-
-	.close_icon
-		display: none
-
-	.close_icon_show
-		display: block
-		position: absolute
-		z-index: 101
-		top: 25px
-		right: 25px
-
-		img
-			width: 30px
 
 	.logo
 		background-position: left
+
+	+logo_fixed
+
+	.close_icon_show
+		display: block
+		position: fixed
+		z-index: 101
+		top: 30px
+		right: 30px
+		animation: close_icon_appear .5s
+
+		img
+			width: 30px
 
 	.mob_menu_button_wrapper
 		display: block
 		position: absolute
 		top: 35px
-		right: 20px
+		right: 40px
 
 		.mob_menu_button
 			padding: 13px 40px
@@ -86,8 +85,28 @@
 			  weight: 700
 			  size: em(16px)
 
-	.scroll_mouse
-		display: none
+	.menu_show
+		display: block
+		background-color: $dark-bg
+		z-index: 100
+		width: 100%
+		height: 100%
+		position: fixed
+		padding: 120px 60px
+		margin-left: -15px
+		margin-top: -20px
+		animation: menu_appear .3s ease-in-out
+
+		a
+			width: 100%
+			color: #fff
+			letter-spacing: 2.3px
+			line-height: 2
+			font-weight: 300
+			font:
+				size: em(36px)
+				weight: 700
+				family: $merriweather
 
 	// head end
 
@@ -122,10 +141,11 @@
 
 	.foo_top .foo_nav_wrapper a
 		display: block
-		line-height: 5
+		line-height: 4
 		width: 100%
 		padding: 0
-		font-size: em(16px)
+		font-size: em(18px)
+		font-weight: 700
 
 	.foo_top .social_icons_wrapper .social_icons
 		float: none
@@ -155,6 +175,8 @@
 
 @media only screen and (max-width : 480px)
 
+	+logo_fixed
+
 	.logo_wrapper
 		top: 30px
 		left: 0
@@ -177,18 +199,19 @@
 	.form_wrapper
 		padding: 70px	30px
 
+	.accordion dt .arrow
+		top: 30px
+
 @media only screen and (max-width : 320px)
 
-	.mob_menu_button_wrapper
-		top: 20px
-		right: 55px
+	+logo_fixed
 
-	.logo_wrapper
-		top: 27px
-		left: -10px
+	.mob_menu_button_wrapper
+		right: 20px
 
 	.accordion
 		padding: 0 30px 60px
+
 
 /*==========  Mobile First  ==========*/
 
