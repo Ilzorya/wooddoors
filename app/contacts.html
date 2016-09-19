@@ -135,7 +135,9 @@
       </div>
 		</div>
 
-		<div id="map"></div>
+		<div class="map_wrapper">
+      <div id="map"></div>
+    </div>
 
   </div>
 
@@ -153,7 +155,7 @@
           var mapOptions = {
               center: new google.maps.LatLng(49.30385,29.974903),
               zoom: 9,
-              zoomControl: false,
+              zoomControl: true,
               zoomControlOptions: {
                   style: google.maps.ZoomControlStyle.SMALL,
               },
