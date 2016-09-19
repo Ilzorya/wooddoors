@@ -44,17 +44,17 @@
 
 	<!-- Custom Browsers Color Start -->
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#122D2C">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#122D2C">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#122D2C">
 	<!-- Custom Browsers Color End -->
 
 </head>
 <body>
 
-	<div class="contacts_wrapper">
+	<div class="head_wrapper_innerpage">
 
 		<header>
 			<div class="container">
@@ -66,7 +66,7 @@
 
 				<!-- mob menu -->
 				<div class="mob_menu_button_wrapper">
-					<a href="#" class="mob_menu_button">Меню</a>
+					<a href="#" class="mob_menu_button">Мен ю</a>
 				</div>
 
 				<a href="#" class="close_icon">
@@ -102,134 +102,154 @@
 			</div>
 		</header>
 
+		<div class="head_content_wrapper_with_p">
+
+			<h1 class="header_title">Каталог</h1>
+
+			<p class="disc_head_content">
+				Все изделия изготавливаются из натурального дерева из дуба, ясеня или сосны под заказ
+			</p>
+
+		</div>
+	</div>
+
+	<div class="tabs_catalog">
 		<div class="container">
+			<div class="row tabs_row">
 
-      <div class="contact_form">
+				<div class="col-md-4">
+					<div class="tab_catalog">
 
-        <div class="contact_form_wrapper">
+						<div class="tab_icons_wrapper">
+							<img src="../img/ic_doors.svg" class="tab_icons">
+						</div>
 
-    			<h1>Контакты</h1>
+						<div class="tab_content">
 
-          <p>Наш адрес:<br>Украина, г.Тараща,<br>ул. Степовая, 15a</p>
+							<h3>Межкомнатные и входные двери</h3>
 
-          <p>Телефоны:<br>+38 (097) 240-00-30<br>+38 (044) 279-79-87</p>
+							<p class="tab_small_desc">Сосна - от 4000 грн./1 шт<br>Ясень - от 5500 грн./1 шт</p>
 
-          <p>Електронная почта:<br>woodoors@gmail.com</p>
+						</div>
+					</div>
+				</div>
 
-          <div class="contacts_social_icons_wrapper">
+				<div class="col-md-4">
+					<div class="tab_catalog">
 
-    				<div class="social_icons">
+						<div class="tab_icons_wrapper">
+							<img src="../img/ic_furniture.svg" class="tab_icons">
+						</div>
 
-    					<a href="https://vk.com/">
-    						<img src="../img/ic_vk_white.svg" class="ic_vk_white">
-    					</a>
+						<div class="tab_content">
 
-    					<a href="https://facebook.com">
-    						<img src="../img/ic_fb_white.svg" class="ic_fb_white">
-    					</a>
+							<h3>Мебель</h3>
 
-    				</div>
-    			</div>
+							<p class="tab_small_desc">Кухни, столы, стулья, кровати, шкафы, стенки</p>
 
-        </div>
-      </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="tab_catalog">
+
+						<div class="tab_icons_wrapper">
+							<img src="../img/ic_stairs.svg" class="tab_icons">
+						</div>
+
+						<div class="tab_content">
+
+							<h3>Лестницы</h3>
+
+							<p class="tab_small_desc">Сосна - от 4000 грн./1 шт<br>Ясень - от 5500 грн./1 шт</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+
+		<div class="foo_top container">
+
+			<div class="bottom_logo_wrapper col-xs-12 col-sm-3 col-md-3">
+				<a href="#" class="logo_black">
+				</a>
+			</div>
+
+			<nav class="foo_nav_wrapper col-xs-12 col-sm-7 col-md-6">
+				<a href="#">Главная</a>
+				<a href="#">Каталог</a>
+				<a href="#">Цены</a>
+				<a href="#">Статьи</a>
+				<a href="#">Контакты</a>
+			</nav>
+
+			<div class="social_icons_wrapper col-xs-12 col-sm-2 col-md-3">
+
+				<div class="social_icons">
+
+					<a href="https://vk.com/">
+						<img src="../img/ic_vk.svg" class="ic_vk">
+					</a>
+
+					<a href="https://facebook.com">
+						<img src="../img/ic_fb.svg" class="ic_fb">
+					</a>
+
+				</div>
+
+			</div>
+
 		</div>
 
-		<div class="map_wrapper">
-      <div id="map"></div>
-    </div>
+		<div class="foo_bottom container">
 
-  </div>
+			<div class="rights col-xs-12 col-sm-4 col-md-4">
+				<p>© 2016 Woodoors<br>
+						Все права защищены<br>
+						Создание и поддержка Ilya Zoria Studio</p>
+			</div>
 
-  <script>var scr = {"scripts":[
-    {"src" : "js/libs.min.js", "async" : false},
-    {"src" : "js/common.js", "async" : false}
-    ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-  </script>
-  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBz9uzaaX-x3z1NUphQjnHcbNqpTtxJXMw&sensor=false&extension=.js'></script>
+			<div class="location_wrapper col-xs-12 col-sm-4 col-md-4">
 
-  <script>
-      google.maps.event.addDomListener(window, 'load', init);
-      var map;
-      function init() {
-          var mapOptions = {
-              center: new google.maps.LatLng(49.30385,29.974903),
-              zoom: 9,
-              zoomControl: true,
-              zoomControlOptions: {
-                  style: google.maps.ZoomControlStyle.SMALL,
-              },
-              disableDoubleClickZoom: false,
-              mapTypeControl: false,
-              scaleControl: false,
-              scrollwheel: true,
-              panControl: false,
-              streetViewControl: false,
-              draggable : true,
-              overviewMapControl: false,
-              overviewMapControlOptions: {
-                  opened: false,
-              },
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
-              styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}],
-          }
-          var mapElement = document.getElementById('map');
-          var map = new google.maps.Map(mapElement, mapOptions);
-          var locations = [
-  ['Office', 'undefined', 'undefined', 'undefined', 'undefined', 49.5619951, 30.497390900000028, 'https://mapbuildr.com/assets/img/markers/hollow-pin-red.png'],['Киев', 'undefined', 'undefined', 'undefined', 'undefined', 50.4501, 30.523400000000038, 'https://mapbuildr.com/assets/img/markers/ellipse-green.png']
-          ];
-          for (i = 0; i < locations.length; i++) {
-  			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
-  			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
-  			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
-             if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
-             if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
-              marker = new google.maps.Marker({
-                  icon: markericon,
-                  position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-                  map: map,
-                  title: locations[i][0],
-                  desc: description,
-                  tel: telephone,
-                  email: email,
-                  web: web
-              });
-  link = '';     }
-     var waypts = [];
-        directionsService = new google.maps.DirectionsService();
-        directionsDisplay = new google.maps.DirectionsRenderer({
-            suppressMarkers: true
-        });
-        if (locations.length > 1){
-            for (var i = 0; i < locations.length; i++) {
-                waypts.push({
-                    location:new google.maps.LatLng(locations[i][5], locations[i][6]),
-                    stopover:true
-                });
-            };
-            var request = {
-                origin: new google.maps.LatLng(locations[0][5], locations[0][6]),
-                destination: new google.maps.LatLng(locations[locations.length - 1][5], locations[locations.length - 1][6]),
-                waypoints: waypts,
-                optimizeWaypoints: true,
-                travelMode: google.maps.DirectionsTravelMode.DRIVING
-            };
-            directionsService.route(request, function(response, status) {
-                if (status == google.maps.DirectionsStatus.OK) {
-                    polylineOptions = {
-                        strokeColor: '#626363',
-                        strokeWeight: '1'
-                    }
-                    directionsDisplay.setOptions({
-                        polylineOptions: polylineOptions
-                    });
-                    directionsDisplay.setDirections(response);
-                }
-            });
-            directionsDisplay.setMap(map);
-         }
-  }
-  </script>
+				<div class="location">
 
+					<img src="../img/ic_location.svg" class="ic_location">
+					<p>
+						Наш адрес:<br>
+						Украина, г.Тараща,<br>
+						ул. Степовая 15a
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="bottom_phone_wrapper col-xs-12 col-sm-4 col-md-4">
+
+				<div class="bottom_phone">
+
+					<img src="../img/ic_cicle_phone_black.svg">
+					<ul class="phones">
+						<li>(097) 823 32 39</li>
+						<li>(097) 823 32 39</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
 </body>
 </html>

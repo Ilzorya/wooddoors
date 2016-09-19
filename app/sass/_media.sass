@@ -74,6 +74,7 @@
 		position: absolute
 		top: 35px
 		right: 40px
+		z-index: 1
 
 		.mob_menu_button
 			padding: 13px 40px
@@ -136,8 +137,11 @@
 	.foo_bottom
 		padding: 0
 
-	.bottom_logo_wrapper, .foo_nav_wrapper, .social_icons_wrapper, .rights, .location_wrapper, .bottom_phone_wrapper
+	.bottom_logo_wrapper, .foo_nav_wrapper, .social_icons_wrapper, .location_wrapper, .bottom_phone_wrapper
 		padding-bottom: 100px
+
+	 .rights
+			padding-bottom: 30px
 
 	.foo_top .foo_nav_wrapper a
 		display: block
@@ -202,12 +206,28 @@
 	.accordion dt .arrow
 		top: 30px
 
+	//contacts page
+
+	.contact_form
+		top: 20%
+
+		.contact_form_wrapper
+			padding: 10px 0 0px 30px
+			background-color: transparent
+
+	  h1
+	    padding: 10px 0px 30px 0px
+
+	  p
+	    padding-bottom: 20px
+
 @media only screen and (max-width : 320px)
 
 	+logo_fixed
 
 	.mob_menu_button_wrapper
 		right: 20px
+
 
 	.accordion
 		padding: 0 30px 60px
