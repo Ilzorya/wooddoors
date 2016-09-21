@@ -20,22 +20,38 @@
 
 .tabs_catalog
   background-color: #F9F9F9
-  height: 170px
+  height: 155px
+  margin-right: auto
+  margin-left: auto
+  padding-left: 15px
+  padding-right: 15px
+
+  .tabs_catalog_wrapper
+    width: 1000px
 
   .tabs_row
     padding-bottom: 0
 
+  .tab_catalog_wrapper
+    width: 33.33333333%
+    float: left
+
   .tab_catalog
-    height: 170px
-    padding: 10%
+    height: 155px
+    padding: 9%
+    transition: all 0.3s ease
+    &:hover
+      border-bottom: 1px solid $accent
+      cursor: pointer
 
   .tab_catalog_selected
     background-color: white
+    border-bottom: 1px solid $accent
 
   .tab_icons_wrapper
     float: left
     margin-right: 30px
-    line-height: 6
+    line-height: 6.5
 
   .tab_content
     padding-left: 80px
