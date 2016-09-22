@@ -27,7 +27,7 @@
   padding-right: 15px
 
   .tabs_catalog_wrapper
-    width: 1000px
+    // width: 1000px
 
   .tabs_row
     padding-bottom: 0
@@ -46,7 +46,6 @@
 
   .tab_catalog_selected
     background-color: white
-    border-bottom: 1px solid $accent
 
   .tab_icons_wrapper
     float: left
@@ -64,6 +63,34 @@
       font:
         size: em(13px)
 
+.catalog_gallery
+  padding-top: 70px
+  padding-bottom: 70px
+
+  .g_img_wrapper
+    padding-bottom: 50px
+    width: 25%
+    float: left
+    margin-left: 10px
+    margin-right: 10px
+
+    @media only screen and (max-width : 992px)
+      width: 33.33333333%
+      float: left
+      margin-left: 10px
+      margin-right: 10px
+
+    @media only screen and (max-width : 767px)
+      width: 100%
+
+  .g_img
+    border: 1px solid #E2E5E7
+    width: 100%
+    height: auto
+
+  .g_title
+    text-align: center
+    padding-top: 20px
 
 footer
   margin-top: 100px
