@@ -15,53 +15,53 @@
     .disc_head_content
       color: white
       text-align: center
-      width: 430px
+      max-width: 380px
       margin: 0 auto
 
-.tabs_catalog
-  background-color: #F3F3F3
+.tabs_catalog_scroll
   height: 155px
-  margin-right: auto
-  margin-left: auto
-  padding-left: 15px
-  padding-right: 15px
+  overflow-x: scroll
+  overflow-y: hidden
+  background-color: #F3F3F3
 
-  .tabs_catalog_wrapper
-    width: 1000px
+.tabs_catalog_scroll::-webkit-scrollbar
+  display: none
 
-  .tabs_row
-    padding-bottom: 0
+.tabs_catalog
+  width: 900px
+  height: 155px
+  margin: 0 auto
 
-  .tab_catalog_wrapper
-    width: 33.33333333%
+  .tab_wrapper
+    width: 290px
     float: left
 
-  .tab_catalog
-    height: 155px
-    padding: 9%
-    transition: all 0.3s ease
-    &:hover
-      border-bottom: 1px solid $accent
-      cursor: pointer
+    .tab
+      height: 155px
+      padding: 9%
+      transition: all 0.3s ease
+      &:hover
+        background-color: white
+        cursor: pointer
 
-  .tab_catalog_selected
-    background-color: white
+    .tab_selected
+      background-color: white
 
-  .tab_icons_wrapper
-    float: left
-    margin-right: 30px
-    line-height: 6.5
+    .tab_icons_wrapper
+      float: left
+      margin-right: 30px
+      line-height: 6.5
 
-  .tab_content
-    padding-left: 80px
+    .tab_content
+      padding-left: 80px
 
-    h3
-      margin: 0
+      h3
+        margin: 0
 
-    .tab_small_desc
-      margin-bottom: 0
-      font:
-        size: em(13px)
+      .tab_small_desc
+        margin-bottom: 0
+        font:
+          size: em(13px)
 
 .catalog_gallery
   padding-top: 70px
