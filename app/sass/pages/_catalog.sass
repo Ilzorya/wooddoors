@@ -22,7 +22,7 @@
   height: 155px
   overflow-x: scroll
   overflow-y: hidden
-  background-color: #F3F3F3
+  background-color: $grey-bg
 
 .tabs_catalog_scroll::-webkit-scrollbar
   display: none
@@ -37,15 +37,18 @@
     float: left
 
     .tab
+      opacity: 0.7
       height: 155px
       padding: 9%
       transition: all 0.3s ease
       &:hover
         background-color: white
         cursor: pointer
+        opacity: 1
 
     .tab_selected
       background-color: white
+      opacity: 1
 
     .tab_icons_wrapper
       float: left
@@ -73,9 +76,16 @@
     padding-bottom: 70px
     margin-right: 30px
     margin-left: 30px
+    transition: 0.3s
 
   .g_img
-    border: 1px solid #E2E5E7
+    transition: 0.3s
+    opacity: 0.95
+
+    &:hover
+      box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.3)
+      opacity: 1
+
 
   .g_title
     text-align: center
