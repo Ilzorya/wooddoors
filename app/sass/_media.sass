@@ -13,6 +13,16 @@
 		display: none
 
 
+	// product page
+
+	.side_features_wrapper
+		display: none
+
+	.info
+		left: 7%
+		width: 100%
+
+
 @media only screen and (max-width : 992px)
 
 	.item_vertical
@@ -22,10 +32,33 @@
 		display: none
 
 	.foo_top .foo_nav_wrapper a
-		padding-left: 10px
+		padding-left: 1.8em
 
 	.btn_cta_wrapper
 		right: 20px
+
+	// product page
+
+	.head_content_wrapper_pp
+		margin: 0
+
+	.head_content_wrapper_pp
+		.header_product_title, .price_pp
+			color: $black_font
+
+	.info
+		margin-top: 50px
+		margin-bottom: 50px
+		left: 0
+
+		.disc
+			margin-top: 40px
+
+	.pp_image_small img
+		width: 77px
+
+	.side_features_wrapper
+		display: block
 
 
 @media only screen and (max-width : 767px)
@@ -228,6 +261,30 @@
 		width: 250px
 		height: 250px
 
+	//product page
+
+	.content_pp_wrapper
+		margin: 0
+		padding: 0
+
+	.pp_image_block
+		padding: 0
+
+	.pp_image_big
+		width: 100%
+
+	.info_wrapper
+		padding: 0
+
+		.info
+			padding: 0 40px
+
+	.side_features_wrapper
+		padding: 0
+
+	.head_wrapper_pp
+		height: 270px
+
 @media only screen and (max-width : 320px)
 
 	+logo_fixed
@@ -288,3 +345,5 @@
 
 	.close_icon
 		display: none
+
+	// product page
