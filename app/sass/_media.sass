@@ -53,11 +53,13 @@
 		.disc
 			margin-top: 40px
 
-	.pp_image_small img
-		width: 77px
+	.pp_image_big
+		width: 440px
+
 
 	.side_features_wrapper
 		display: block
+
 
 @media only screen and (max-width : 767px)
 
@@ -142,7 +144,6 @@
 
 	// head end
 
-
 	.form_wrapper
 		padding: 70px	70px
 
@@ -151,7 +152,6 @@
 
 	.review_item
 		padding: 60px 40px
-
 
 	//footer
 
@@ -211,6 +211,21 @@
 		padding: 27px
 		width: 294px
 
+
+	//product page
+	.btn_cta_accent
+	  margin-top: 20px
+	  border: none
+	  padding: 0px 30px
+	  background-color: $accent
+	  color: white
+	  letter-spacing: 0.4px
+	  line-height: 3.5
+	  transition: 0.3s
+	  font:
+	    weight: 700
+	    size: em(15px)
+
 @media only screen and (max-width : 480px)
 
 	+logo_fixed
@@ -230,15 +245,22 @@
 	.head_wrapper_lp
 		height: 500px
 
-	.head_content_wrapper
-		.header_title
-			padding: 30px 0
+
+	//catalog
+
+	.head_wrapper_innerpage
+		height: 320px
+
+	.head_wrapper_innerpage .head_content_wrapper_with_p h1
+		padding: 0
+
 
 	.form_wrapper
 		padding: 70px	30px
 
 	.accordion dt .arrow
 		top: 30px
+
 
 	//contacts page
 
@@ -289,6 +311,14 @@
 	.slick-prev
 		left: 20px
 
+	//articles
+
+	.head_wrapper_innerpage .head_content_wrapper_h1 h1
+		padding: 30px 0
+
+	.content_articles_wrapper .article_wrapper
+		margin: 10px 0
+
 @media only screen and (max-width : 320px)
 
 	+logo_fixed
@@ -318,6 +348,11 @@
 					padding-left: 0
 					padding-top: 15px
 
+	//article
+
+	.content_articles_wrapper
+		padding-top: 30px
+
 
 /*==========  Mobile First  ==========*/
 
@@ -335,10 +370,15 @@
 @media only screen and (min-width : 767px)
 	/**/
 
+	//product page
+
+	.btn_cta_accent
+		display: none
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
+
 
 
 /* Large Devices, Wide Screens */
@@ -349,5 +389,7 @@
 
 	.close_icon
 		display: none
+
+
 
 	// product page
