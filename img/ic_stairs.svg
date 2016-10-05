@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="68px" height="86px" viewBox="0 0 68 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_stairs</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная" transform="translate(-1075.000000, -870.000000)" stroke-width="2" stroke="#D79668">
+            <g id="ic_stairs" transform="translate(1060.000000, 865.000000)">
+                <g id="Group-8" transform="translate(16.000000, 7.000000)">
+                    <polyline id="Path-8" points="0 84 7.77154592e-16 70 13.9999725 70"></polyline>
+                    <polyline id="Path-8-Copy" points="13 71 13 57 26.9999725 57"></polyline>
+                    <polyline id="Path-8-Copy-2" points="26 58 26 44 39.9999725 44"></polyline>
+                    <polyline id="Path-8-Copy-3" points="39 45 39 31 52.9999725 31"></polyline>
+                    <polyline id="Path-8-Copy-4" points="52 32 52 18 65.9999725 18"></polyline>
+                    <polyline id="Path-9" points="0.0699462891 83.0024397 14.2182617 83.0024414 66 31.4677734 66 17"></polyline>
+                    <polyline id="Path-10" points="6 69 6 51 56 0.990795136 56 17"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_fb_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mob_menu" transform="translate(-259.000000, -549.000000)">
+            <g id="Menu">
+                <g id="soc" transform="translate(260.000000, 510.000000)">
+                    <g id="ic_fb_white" transform="translate(0.000000, 40.000000)">
+                        <circle id="Oval-2" stroke="#FFFFFF" stroke-width="2" opacity="0.200000003" cx="15" cy="15" r="15"></circle>
+                        <path d="M12.834375,23.3465625 L16.2834375,23.3465625 L16.2834375,14.9990625 L18.5840625,14.9990625 L18.88875,12.1228125 L16.2834375,12.1228125 L16.2871875,10.6828125 C16.2871875,9.9328125 16.3584375,9.530625 17.4346875,9.530625 L18.8728125,9.530625 L18.8728125,6.6534375 L16.57125,6.6534375 C13.8065625,6.6534375 12.834375,8.049375 12.834375,10.3959375 L12.834375,12.1228125 L11.11125,12.1228125 L11.11125,15 L12.834375,15 L12.834375,23.3465625 L12.834375,23.3465625 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

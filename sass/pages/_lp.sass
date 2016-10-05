@@ -1,0 +1,115 @@
+.img_wrapper
+  width: 100px
+  height: 100px
+  margin: 10px auto
+  position: relative
+
+  .img_lp
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    margin: auto
+    display: block
+    max-width: 100%
+    max-height: 100%
+
+.content
+  text-align: center
+
+.head_wrapper_lp
+  height: 600px
+  background-image: url(../img/img_bg/img_bg_lp.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+
+  .head_content_wrapper
+    h1
+      color: white
+      text-align: center
+
+  .scroll_mouse
+    position: absolute
+    bottom: 60px
+    left: 50%
+    width: 17px
+    height: 24px
+
+.our_profile
+  background-color: $grey-bg
+
+.why_we
+  background-color: $dark-bg
+
+  h1
+    color: white
+
+  h3
+    color: white
+
+  p
+    color: darken(white, 50%)
+
+.accordion
+  max-width: 600px
+  margin: 0 auto
+
+  dt
+    padding: 20px
+    margin-bottom: 20px
+    border: 1px solid $border_color
+    cursor: pointer
+    position: relative
+
+    a
+      padding: 23px 50px 20px 0px
+      color: $black_font
+
+    .arrow
+      height: 20px
+      width: 20px
+      float: right
+      right: 20px
+      position: absolute
+      vertical-align: middle
+
+    .arrow_up
+      transform: rotate(180deg)
+      animation: arrow_up 0.5s
+
+  @keyframes arrow_up
+  	from
+  		transform: rotate(0deg)
+  	to
+  		transform: rotate(180deg)
+
+  dd
+    margin-left: 20px
+    padding-bottom: 40px
+    padding-top: 20px
+
+.statistic
+  background-color: $grey-bg
+
+  .content h1
+    color: $accent
+    font-size: 60px
+    padding: 0
+    margin-bottom: 0
+
+@import "modules/order_bottom_block"
+
+.reviews
+
+  h3
+    color: white
+
+  p
+    color: darken(white, 50%)
+
+.review_item
+  text-align: center
+  padding-top: 60px

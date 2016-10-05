@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная.-Поп-ап" transform="translate(-911.000000, -240.000000)" fill="#889595">
+            <polygon id="ic_close" points="930.213115 240.032787 921.032787 249.245902 911.819672 240.032787 911.196721 240.655738 920.377049 249.868852 911.196721 259.081967 911.819672 259.704918 921.032787 250.491803 930.213115 259.704918 930.868852 259.081967 921.655738 249.868852 930.868852 240.655738"></polygon>
+        </g>
+    </g>
+</svg>
