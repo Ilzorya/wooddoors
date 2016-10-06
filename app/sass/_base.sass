@@ -1,6 +1,16 @@
 @import "bourbon"
 @import "vars"
 
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body input
+	border-radius: 0
+
 *
 	-webkit-font-smoothing: antialiased
 
@@ -19,16 +29,6 @@
 *:-ms-input-placeholder
 	color: #666
 	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
-body
-  background-color: #4f5355
 
 .body_wrapper
 	background-color: white
@@ -60,16 +60,18 @@ h3
 	color: $black_font
 
 body
+	background-color: #193836
 	font-size: 15px
-	color: rgba($black_font, 0.6)
+	color: $grey_font
 	min-width: 320px
 	position: relative
-	line-height: 1.5
+	line-height: 1.7
 	font-family: $proxima_nova
 	overflow-x: hidden
 
 a
 	text-decoration: none
+	color: $accent
 
 	&:hover
 		text-decoration: none
@@ -80,6 +82,7 @@ a
 .second-btn
 	padding: 10px	50px
 	border: 1px solid #D6DADA
+	border-radius: 0
 	background-color: transparent
 	color: $accent
 	transition: 0.3s

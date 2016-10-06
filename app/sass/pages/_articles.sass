@@ -17,12 +17,13 @@
   display: flex
   flex-wrap: wrap
   justify-content: center
-  text-align: left 
+  text-align: left
 
   .article_wrapper
     width: 360px
     height: 430px
     margin: 0px 30px 70px 30px
+    color: $grey_font
     transition: 0.3s
     cursor: pointer
     &:hover
@@ -31,9 +32,13 @@
         .article_content h3
           color: $accent
 
-    .article_img
-      position: relative
-      width: 100%
+    .article_img_wrapper
+      height: 160px
+      overflow: hidden
+
+      .article_img
+        position: relative
+        width: 100%
 
     .article_content_wrapper
       padding: 20px
@@ -48,7 +53,7 @@
           transition: 0.3s
 
         p
-          height: 140px
+          height: 130px
           overflow: hidden
 
         .article_readtime
