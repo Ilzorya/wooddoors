@@ -6,17 +6,18 @@
   background-position: center
   position: relative
 
-  .head_content_wrapper_with_p
+  .head_content_wrapper_h1
     h1
       color: white
       text-align: center
-      padding: 50px 0
+      padding: 60px 0
 
 .content_articles_wrapper
   padding-top: 70px
   display: flex
   flex-wrap: wrap
   justify-content: center
+  text-align: left 
 
   .article_wrapper
     width: 360px
@@ -26,6 +27,9 @@
     cursor: pointer
     &:hover
       box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.3)
+      &:hover
+        .article_content h3
+          color: $accent
 
     .article_img
       position: relative
@@ -41,8 +45,7 @@
         top: -50px
 
         h3
-          &:hover
-            color: $accent
+          transition: 0.3s
 
         p
           height: 140px
@@ -50,16 +53,3 @@
 
         .article_readtime
           font-size: em(11px)
-
-
-
-
-
-
-
-
-
-
-
-footer
-  margin-top: 200px
