@@ -4,33 +4,37 @@ header
 
 .logo_wrapper
   top: 40px
+  z-index: 101
 
 .logo
   background-repeat: no-repeat
   background-image: url("../img/logo.svg")
   background-position: center center
   height: 40px
-  background-size: contain
+  background-size: inherit
   display: block
 
 nav
   top: 20px
+  z-index: 1
   a
     color: white
-    font-size: em(14px)
+    font-size: em(15px)
     text-decoration: none
     letter-spacing: 0.3px
     line-height: 27px
-    font-weight: 300
+    font-weight: 700
     display: block
     float: left
     width: 50%
+    transition: 0.3s
 
     &:hover
-      color: #ccc
+      color: $accent
 
 .phone_wrapper
   top: 30px
+  z-index: 1
 
   img
     float: left
@@ -44,6 +48,8 @@ nav
     color: white
     line-height: 27px
 
+.btn_cta_wrapper
+  z-index: 1
 
 .btn_cta
   margin-top: 30px
@@ -53,10 +59,10 @@ nav
   color: $black_font
   letter-spacing: 0.4px
   line-height: 3.5
+  transition: 0.3s
   font:
     weight: 700
     size: em(15px)
 
   &:hover
   	opacity: 0.8
-  	text-decoration: none

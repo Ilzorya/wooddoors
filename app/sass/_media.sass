@@ -1,47 +1,357 @@
 @import "bourbon"
 @import "vars"
+@import "mixins"
 
 /*==========  Desktop First  ==========*/
 
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
 
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-
-	.item_vertical
-		padding-bottom: 60px
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-	.item_vertical
-		padding-bottom: 60px
-
-	.row
-		padding-bottom: 60px
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-	.mob_menu_wrapper
-		width: 100%
-		height: 100%
-		background-color: $dark-bg
-
-
-	.btn_cta, .scroll_mouse
+	.mob_menu_button_wrapper
 		display: none
 
-/* Custom, iPhone Retina */
+	.close_icon
+		display: none
+
+
+	// product page
+
+	.side_features_wrapper
+		display: none
+
+	.info
+		left: 7%
+		width: 100%
+
+@media only screen and (max-width : 992px)
+
+	.item_vertical
+		margin-bottom: 60px
+
+	.close_icon, .phone_wrapper
+		display: none
+
+	.foo_top .foo_nav_wrapper a
+		padding-left: 1.8em
+
+	.btn_cta_wrapper
+		right: 20px
+
+	// product page
+
+	.head_content_wrapper_pp
+		margin: 0
+
+	.head_content_wrapper_pp
+		.header_product_title, .price_pp
+			color: $black_font
+
+	.info
+		margin-top: 50px
+		margin-bottom: 50px
+		left: 0
+
+		.disc
+			margin-top: 40px
+
+	.pp_image_big
+		width: 440px
+
+
+	.side_features_wrapper
+		display: block
+
+
+@media only screen and (max-width : 767px)
+
+	// head
+
+	@keyframes menu_appear
+		from
+			left: 100px
+			opacity: 0
+		to
+			left: 15px
+			opacity: 1
+
+	@keyframes close_icon_appear
+		from
+			right: 0
+			opacity: 0
+			transform: rotate(90deg)
+		to
+			right: 30px
+			opacity: 1
+			transform: rotate(0deg)
+
+	.head_nav, .phone_wrapper, .close_icon, .scroll_mouse
+		display: none
+
+	.logo
+		background-position: left
+
+	+logo_fixed
+
+	.close_icon_show
+		display: block
+		position: fixed
+		z-index: 101
+		top: 30px
+		right: 30px
+		animation: close_icon_appear .5s
+
+		img
+			width: 30px
+
+	.mob_menu_button_wrapper
+		display: block
+		position: absolute
+		top: 35px
+		right: 40px
+		z-index: 1
+
+		.mob_menu_button
+			padding: 13px 40px
+			color: white
+			letter-spacing: 0.4px
+			line-height: 3.5
+			border: 2px solid white
+			font:
+			  weight: 700
+			  size: em(16px)
+
+	.menu_show
+		display: block
+		background-color: $dark-bg
+		z-index: 100
+		width: 100%
+		height: 100%
+		position: fixed
+		padding: 120px 60px
+		margin-left: -15px
+		margin-top: -20px
+		animation: menu_appear .3s ease-in-out
+
+		a
+			width: 100%
+			color: #fff
+			letter-spacing: 2.3px
+			line-height: 2
+			font-weight: 300
+			font:
+				size: em(36px)
+				weight: 700
+				family: $merriweather
+
+	// head end
+
+	.form_wrapper
+		padding: 70px	70px
+
+	.accordion
+		padding: 0 50px
+
+	.review_item
+		padding: 60px 40px
+
+	//footer
+
+	.foo_top, .foo_bottom
+		text-align: center
+
+	.foo_top .bottom_logo_wrapper .logo_black
+		background-position: center
+
+	.foo_top
+		padding-top: 100px
+		padding-bottom: 0
+
+	.foo_bottom
+		padding: 0
+
+	.bottom_logo_wrapper, .foo_nav_wrapper, .social_icons_wrapper, .location_wrapper, .bottom_phone_wrapper
+		padding-bottom: 100px
+
+	 .rights
+			padding-bottom: 30px
+
+	.foo_top .foo_nav_wrapper a
+		display: block
+		line-height: 4
+		width: 100%
+		padding: 0
+		font-size: em(18px)
+		font-weight: 700
+
+	.foo_top .social_icons_wrapper .social_icons
+		float: none
+
+	.foo_bottom .bottom_phone_wrapper .bottom_phone
+		display: inline-block
+		float: none
+
+	.foo_bottom
+		font-size: em(16px)
+		display: flex
+		flex-direction: column
+
+		.rights
+			font-size: em(14px)
+			opacity: 0.5
+			order: 3
+
+		.location_wrapper
+			order: 2
+
+		.bottom_phone_wrapper
+			order: 1
+
+	//footer end
+
+	.tab_catalog
+		padding: 27px
+		width: 294px
+
+
+	//product page
+	.btn_cta_accent
+	  margin-top: 20px
+	  border: none
+	  padding: 0px 30px
+	  background-color: $accent
+	  color: white
+	  letter-spacing: 0.4px
+	  line-height: 3.5
+	  transition: 0.3s
+	  font:
+	    weight: 700
+	    size: em(15px)
+
+@media only screen and (max-width : 480px)
+
+	+logo_fixed
+
+	.logo_wrapper
+		top: 30px
+		left: 0
+		padding: 0
+
+	.head_content_wrapper
+		padding: 0	30px
+
+	.mob_menu_button_wrapper
+		top: 25px
+		right: 30px
+
+	.head_wrapper_lp
+		height: 500px
+
+
+	//catalog
+
+	.head_wrapper_innerpage
+		height: 320px
+
+	.head_wrapper_innerpage .head_content_wrapper_with_p h1
+		padding: 0
+
+
+	.form_wrapper
+		padding: 70px	30px
+
+	.accordion dt .arrow
+		top: 30px
+
+
+	//contacts page
+
+	.contact_form
+		top: 20%
+
+		.contact_form_wrapper
+			padding: 10px 0 0px 30px
+			background-color: transparent
+
+	  h1
+	    padding: 10px 0px 30px 0px
+
+	  p
+	    padding-bottom: 20px
+
+	.g_img
+		width: 250px
+		height: 250px
+
+	//product page
+
+	.content_pp_wrapper
+		margin: 0
+		padding: 0
+
+	.pp_image_block
+		padding: 0
+
+	.pp_image_big
+		width: 100%
+
+	.info_wrapper
+		padding: 0
+
+		.info
+			padding: 0 40px
+
+	.side_features_wrapper
+		padding: 0
+
+	.head_wrapper_pp
+		height: 270px
+
+	.slick-next
+		right: 20px
+
+	.slick-prev
+		left: 20px
+
+	//articles
+
+	.head_wrapper_innerpage .head_content_wrapper_h1 h1
+		padding: 30px 0
+
+	.content_articles_wrapper .article_wrapper
+		margin: 10px 0
+
 @media only screen and (max-width : 320px)
-	/**/
+
+	+logo_fixed
+
+	.mob_menu_button_wrapper
+		right: 20px
+
+	.accordion
+		padding: 0 30px 60px
+
+	//catalog
+
+	.tabs_catalog
+		width: 830px
+
+		.tab_wrapper
+			width: 276px
+
+			.tab
+				padding: 7%
+
+				.tab_icons_wrapper
+					margin-right: 30px
+					line-height: 7.5
+
+				.tab_content
+					padding-left: 0
+					padding-top: 15px
+
+	//article
+
+	.content_articles_wrapper
+		padding-top: 30px
 
 
 /*==========  Mobile First  ==========*/
@@ -57,15 +367,29 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
+@media only screen and (min-width : 767px)
 	/**/
 
+	//product page
+
+	.btn_cta_accent
+		display: none
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
 
 
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
+	.mob_menu_button_wrapper
+		display: none
+
+	.close_icon
+		display: none
+
+
+
+	// product page

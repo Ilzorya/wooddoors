@@ -1,0 +1,92 @@
+.head_wrapper_innerpage
+  height: 370px
+  background-image: url(../img/img_bg/img_bg_lp.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+
+  .head_content_wrapper_with_p
+    h1
+      color: white
+      text-align: center
+      padding: 20px 0
+
+    .disc_head_content
+      color: white
+      text-align: center
+      max-width: 380px
+      margin: 0 auto
+
+.tabs_catalog_scroll
+  height: 155px
+  overflow-x: scroll
+  overflow-y: hidden
+  background-color: $grey-bg
+
+.tabs_catalog_scroll::-webkit-scrollbar
+  display: none
+
+.tabs_catalog
+  width: 900px
+  height: 155px
+  margin: 0 auto
+
+  .tab_wrapper
+    width: 290px
+    float: left
+
+    .tab
+      opacity: 0.7
+      height: 155px
+      padding: 9%
+      transition: all 0.3s ease
+      &:hover
+        background-color: white
+        cursor: pointer
+        opacity: 1
+
+    .tab_selected
+      background-color: white
+      opacity: 1
+
+    .tab_icons_wrapper
+      float: left
+      margin-right: 30px
+      line-height: 6.5
+
+    .tab_content
+      padding-left: 80px
+
+      h3
+        margin: 0
+
+      .tab_small_desc
+        margin-bottom: 0
+        font:
+          size: em(13px)
+
+.catalog_gallery
+  padding-top: 70px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  .g_img_wrapper
+    padding-bottom: 70px
+    margin-right: 30px
+    margin-left: 30px
+    transition: 0.3s
+
+  .g_img
+    transition: 0.3s
+    opacity: 0.95
+
+    &:hover
+      box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.3)
+      opacity: 1
+
+
+  .g_title
+    text-align: center
+    padding-top: 20px

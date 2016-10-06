@@ -2,30 +2,55 @@ $(function() {
 
 	$(document).ready(function($){
 
-    // Hide all panels to start
+    // accordion
+
     var panels = $('.accordion > dd').hide();
 
-    // Show first panel on load (optional). Remove if you want
-    // panels.first().show();
-
-    // On click of panel title
     $('.accordion > dt').on('click', function(e) {
 			e.preventDefault();
-      var $this = $(this);
 
-      // Slide up all other panels
-      // panels.slideUp();
+      var $this 			= $(this),
+			    description = $this.next('dd');
+
 			$this.siblings('dt').next().slideUp();
 
 
-      //Slide down target panel
-      $this.next('dd').slideDown();
+			if (description.css('display') === 'block') {
+				description.slideUp();
+				$this.find('.arrow').removeClass('arrow_up');
+			} else if (description.css('display') === 'none') {
+				description.slideDown();
+				$this.find('.arrow').addClass('arrow_up');
+			}
 
-			$this.find('.arrow').addClass('arrow-up');
-			$this.siblings().find('.arrow').removeClass('arrow-up');
+			$this.siblings().find('.arrow').removeClass('arrow_up');
 
       return false;
     });
-  });
 
+		//mob menu
+
+		$('.mob_menu_button').on('click', function(){
+			$('.head_nav').addClass('menu_show');
+			$('.close_icon')
+			.addClass('close_icon_show')
+			.removeClass('close_icon');
+			$('.logo_wrapper').addClass('logo_fixed').removeClass('logo_wrapper');
+
+			$('.close_icon_show').on('click', function(){
+				$(this).removeClass('close_icon_show').addClass('close_icon');
+				$('.head_nav').removeClass('menu_show');
+				$('.logo_fixed').addClass('logo_wrapper').removeClass('logo_fixed');
+			});
+		});
+
+		//slick-carousel
+
+		$('.slick-slider').slick({
+		  dots: false,
+		  infinite: true,
+		  speed: 300,
+		});
+
+  });
 });

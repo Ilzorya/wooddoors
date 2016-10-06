@@ -30,7 +30,6 @@
     h1
       color: white
       text-align: center
-      margin-bottom: 220px
 
   .scroll_mouse
     position: absolute
@@ -40,7 +39,7 @@
     height: 24px
 
 .our_profile
-  background-color: #F9F9F9
+  background-color: $grey-bg
 
 .why_we
   background-color: $dark-bg
@@ -69,25 +68,37 @@
       padding: 23px 50px 20px 0px
       color: $black_font
 
-    .arrow_wrapper
+    .arrow
       height: 20px
       width: 20px
       float: right
       right: 20px
       position: absolute
+      vertical-align: middle
 
-    .ic_arrow_rotated
+    .arrow_up
       transform: rotate(180deg)
+      animation: arrow_up 0.5s
+
+  @keyframes arrow_up
+  	from
+  		transform: rotate(0deg)
+  	to
+  		transform: rotate(180deg)
 
   dd
     margin-left: 20px
     padding-bottom: 40px
     padding-top: 20px
 
-.statistic .content h1
-  color: $accent
-  font-size: 60px
-  padding: 0
+.statistic
+  background-color: $grey-bg
+
+  .content h1
+    color: $accent
+    font-size: 60px
+    padding: 0
+    margin-bottom: 0
 
 @import "modules/order_bottom_block"
 

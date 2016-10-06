@@ -1,6 +1,9 @@
 @import "bourbon"
 @import "vars"
 
+*
+	-webkit-font-smoothing: antialiased
+
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
@@ -24,6 +27,15 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
+body
+  background-color: #4f5355
+
+.body_wrapper
+	background-color: white
+	max-width: 1440px
+	margin: 0 auto
+	overflow: hidden
+
 h1
 	font:
 		family: $merriweather
@@ -34,6 +46,10 @@ h1
 	color: $black_font
 	padding: 90px 0
 	letter-spacing: .6px
+
+	@media only screen and (max-width : 480px)
+		font-size: em(30px)
+		padding: 60px 30px
 
 h3
 	font:
@@ -67,8 +83,10 @@ a
 	background-color: transparent
 	color: $accent
 	transition: 0.3s
+	letter-spacing: 0.8px
 	font:
 		size: em(14px)
+		weight: 700
 
 	&:hover
 		background-color: $accent
@@ -78,5 +96,5 @@ a
 .row
 	padding-bottom: 90px
 
-.arrow-up
-  transform: rotate(180deg)
+	@media only screen and (max-width : 480px)
+		padding-bottom: 10px
