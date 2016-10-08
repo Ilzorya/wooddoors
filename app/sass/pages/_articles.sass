@@ -1,0 +1,60 @@
+.head_wrapper_innerpage
+  height: 370px
+  background-image: url(../img/img_bg/img_bg_lp.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+
+  .head_content_wrapper_h1
+    h1
+      color: white
+      text-align: center
+      padding: 60px 0
+
+.content_articles_wrapper
+  padding-top: 70px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  text-align: left
+
+  .article_wrapper
+    width: 360px
+    height: 430px
+    margin: 0px 30px 70px 30px
+    color: $grey_font
+    transition: 0.3s
+    cursor: pointer
+    &:hover
+      box-shadow: 0px 5px 21px -5px rgba(0,0,0,0.3)
+      &:hover
+        .article_content h3
+          color: $accent
+
+    .article_img_wrapper
+      height: 160px
+      overflow: hidden
+
+      .article_img
+        position: relative
+        width: 100%
+
+    .article_content_wrapper
+      padding: 20px
+
+      .article_content
+        background-color: white
+        position: relative
+        padding: 10px 20px
+        top: -50px
+
+        h3
+          transition: 0.3s
+
+        p
+          height: 130px
+          overflow: hidden
+
+        .article_readtime
+          font-size: em(11px)
