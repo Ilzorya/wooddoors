@@ -15,7 +15,7 @@ body input
 	-webkit-font-smoothing: antialiased
 
 *::-webkit-input-placeholder
-	color: #666
+	color: #878787
 	opacity: 1
 
 *:-moz-placeholder
@@ -29,6 +29,14 @@ body input
 *:-ms-input-placeholder
 	color: #666
 	opacity: 1
+
+
+/* Change Autocomplete styles in Chrome*/
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus
+	-webkit-box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.0) inset !important
+	-webkit-text-fill-color: $black_font
 
 .body_wrapper
 	background-color: white
@@ -101,3 +109,28 @@ a
 
 	@media only screen and (max-width : 480px)
 		padding-bottom: 10px
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+html.js .loader_inner
+	background-image: url("../img/preloader.gif")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 60px
+	width: 60px
+	margin-top: -30px
+	margin-left: -30px
+	left: 50%
+	top: 50%
+	position: absolute

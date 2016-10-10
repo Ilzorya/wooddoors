@@ -1,15 +1,25 @@
 .form_wrapper_pop
+  position: relative
+  max-width: 460px
+  margin: 0 auto
   text-align: center
+
+  @media only screen and (max-width : 320px)
+    max-width: 280px
 
 .form_pop
   background-color: white
   padding: 40px 50px
-  max-width: 460px
-  margin: 0 auto
+
+  @media only screen and (max-width : 320px)
+    padding: 30px 30px
 
   h3
     padding: 0 20px
     margin-top: 0
+
+    @media only screen and (max-width : 320px)
+      padding: 0
 
   p
     margin-bottom: 30px
@@ -22,12 +32,16 @@
   border: 1px solid lighten($black_font, 70%)
   box-sizing: border-box
   background-color: transparent
-  color: white
+  color: $black_font
   transition: 0.3s
   outline: none
-  background-image: url(../img/ic_user.svg)
+  background-image: url(../img/icons_small/ic_user_dark.svg)
   background-position: 20px center
   background-repeat: no-repeat
+
+  @media only screen and (max-width : 320px)
+    padding: 15px 0 15px 20px
+    background-image: none
 
   &:hover
     border: 1px solid lighten($black_font, 50%)
@@ -42,12 +56,16 @@
   border: 1px solid lighten($black_font, 70%)
   box-sizing: border-box
   background-color: transparent
-  color: white
+  color: $black_font
   transition: 0.3s
   outline: none
-  background-image: url(../img/ic_phone.svg)
+  background-image: url(../img/icons_small/ic_phone_dark.svg)
   background-position: 20px center
   background-repeat: no-repeat
+
+  @media only screen and (max-width : 320px)
+    padding: 15px 0 15px 20px
+    background-image: none
 
   &:hover
     border: 1px solid lighten($black_font, 50%)
