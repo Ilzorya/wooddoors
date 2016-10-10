@@ -36,6 +36,13 @@ nav
   top: 30px
   z-index: 1
 
+  @media only screen and (max-width : 767px)
+    display: block
+    z-index: 9999
+    position: fixed
+    bottom: 5%
+    left: 21%
+
   img
     float: left
 
@@ -52,6 +59,7 @@ nav
   z-index: 1
 
 .btn_cta
+  outline: none
   margin-top: 30px
   border: none
   border-radius: 0
@@ -61,10 +69,31 @@ nav
   letter-spacing: 0.4px
   line-height: 3.5
   transition: 0.3s
-  outline: none
   font:
     weight: 700
     size: em(15px)
 
   &:hover
   	opacity: 0.8
+
+.btn_cta_content
+  display: block
+  outline: none
+  margin-top: 30px
+  border: none
+  border-radius: 0
+  padding: 0px 30px
+  background-color: $accent
+  color: white
+  letter-spacing: 0.4px
+  line-height: 3.5
+  transition: 0.3s
+  font:
+    weight: 700
+    size: em(15px)
+
+  &:hover
+  	opacity: 0.8
+
+  @media only screen and (min-width : 992px)
+    display: none

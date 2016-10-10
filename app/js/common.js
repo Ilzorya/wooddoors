@@ -53,10 +53,36 @@ $(function() {
 		});
 
 		//magnific pop up
-		$('.btn_cta').magnificPopup({
+		$('.btn_cta, .btn_cta_content').magnificPopup({
 		  type:'inline',
 		  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 		});
 
+		//E-mail Ajax Send
+			//Documentation & Example: https://github.com/agragregra/uniMail
+		$("#form").submit(function() { //Change
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "mail.php", //Change
+				data: th.serialize()
+			}).done(function() {
+				alert("Thank you!");
+				setTimeout(function() {
+					// Done Functions
+					th.trigger("reset");
+				}, 1000);
+			});
+			return false;
+		});
+
+
   });
+});
+
+$(window).load(function() {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
 });

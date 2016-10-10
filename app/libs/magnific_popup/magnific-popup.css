@@ -123,19 +123,19 @@ button::-moz-focus-inner {
   border: 0; }
 
 .mfp-close {
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
   line-height: 44px;
   position: absolute;
-  right: 290;
+  right: 0;
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: 0.4;
+  opacity: 0.65;
   padding: 0 0 18px 10px;
   color: #FFF;
   font-style: normal;
-  font-size: 38px;
+  font-size: 28px;
   font-family: Arial, Baskerville, monospace; }
   .mfp-close:hover,
   .mfp-close:focus {

@@ -1,3 +1,11 @@
 {
+<<<<<<< HEAD
 	"directory" : "app/libs/"
 }
+=======
+	"directory"   : "app/libs/",
+	"proxy"       : "http://<host>:<port>",
+  "https-proxy" : "http://<host>:<port>",
+  "strict-ssl"  : false
+}
+>>>>>>> ec01256960e1d0607da01032447b8d7675818163
