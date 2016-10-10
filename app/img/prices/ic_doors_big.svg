@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="125px" height="288px" viewBox="0 0 125 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_doors_big</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.100000001">
+        <g id="Цены" transform="translate(-116.000000, -490.000000)" stroke-width="4" stroke="#FFFFFF">
+            <g id="ic_doors_big" transform="translate(118.000000, 492.000000)">
+                <polygon id="Path-3" points="18 18 18 149 103 149 103 18"></polygon>
+                <polygon id="Path-3-Copy" points="18 169 18 267 103 267 103 169"></polygon>
+                <polygon id="Path-3" points="26 26 26 138 93 138 93 26"></polygon>
+                <polygon id="Path-3-Copy-2" points="26 178 26 257 93 257 93 178"></polygon>
+                <polygon id="Path-2" points="121 284 121 0 0 0 0 284"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
