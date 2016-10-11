@@ -24,6 +24,34 @@
 
 @media only screen and (max-width : 992px)
 
+	//prices
+	.content_prices
+		padding: 50px
+
+	.left_doors_prices, .left_furniture_prices, .left_stairs_prices, .left_wood_prices
+		text-align: center
+		height: 100px
+		background-image: none
+
+		.huge_title
+			position: relative
+			left: 0
+			bottom: 0
+
+	.left_doors_prices
+		background: linear-gradient(to right, #d4ccb9 0%, #beb7a6 100%)
+
+	.left_furniture_prices
+		background: linear-gradient(to right, #565D65 0%, #565D65 100%)
+
+	.left_stairs_prices
+		background: linear-gradient(to right, #2C2C2E 0%, #2C2C2E 100%)
+
+ .left_wood_prices
+		background: linear-gradient(to right, #675A4C 0%, #675A4C 100%)
+
+
+
 	.item_vertical
 		margin-bottom: 60px
 
@@ -70,9 +98,11 @@
 		margin: 0 auto
 		padding: 30px 40px
 
-
-
 @media only screen and (max-width : 767px)
+
+	//prices
+	.doors_prices, .furniture_prices, .stairs_prices, .wood_prices
+		margin: 0 -15px 70px
 
 	// head
 
@@ -240,6 +270,15 @@
 
 @media only screen and (max-width : 480px)
 
+	//prices
+	.doors_prices, .furniture_prices, .stairs_prices, .wood_prices
+		margin: 0 -15px 30px
+
+	.content_prices
+	  column-count: 1
+	  column-gap: 0
+	  padding: 40px 50px
+
 	+logo_fixed
 
 	.logo_wrapper
@@ -257,7 +296,6 @@
 	.head_wrapper_lp
 		height: 500px
 
-
 	//catalog
 
 	.head_wrapper_innerpage
@@ -272,7 +310,6 @@
 
 	.accordion dt .arrow
 		top: 30px
-
 
 	//contacts page
 
@@ -332,6 +369,12 @@
 		padding-top: 30px
 
 @media only screen and (max-width : 320px)
+
+	//prices
+	.content_prices, .content_wood_prices
+		column-count: 1
+		column-gap: 0
+		padding: 30px
 
 	+logo_fixed
 
