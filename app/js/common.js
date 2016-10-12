@@ -61,23 +61,17 @@ $(function() {
 		//E-mail Ajax Send
 			//Documentation & Example: https://github.com/agragregra/uniMail
 		$("#form").submit(function() { //Change
-			var th = $(this);
 			$.ajax({
 				type: "POST",
-				url: "mail.php", //Change
-				data: th.serialize()
+				url: "app/mail.php", //Change
+				data: $(this).serialize()
 			}).done(function() {
 				alert("Thank you!");
-				setTimeout(function() {
-					// Done Functions
-					th.trigger("reset");
-				}, 1000);
 			});
 			return false;
 		});
 
 		//tabs_catalog
-
 		$('.tab_wrapper').click(function(){
 			var tab_id = $(this).attr('data-tab');
 
