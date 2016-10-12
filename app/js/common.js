@@ -76,13 +76,17 @@ $(function() {
 			return false;
 		});
 
+		//tabs_catalog
+
+		$('.tab_wrapper').click(function(){
+			var tab_id = $(this).attr('data-tab');
+
+				$('.tab_wrapper').removeClass('current');
+				$('.catalog_gallery').removeClass('gallery_selected');
+
+				$(this).addClass('current');
+				$("#"+tab_id).addClass('gallery_selected');
+		})
 
   });
-});
-
-$(window).load(function() {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
 });
