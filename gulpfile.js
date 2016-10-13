@@ -53,7 +53,8 @@ gulp.task('libs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick.min.js',
-		'app/libs/magnific_popup/jquery.magnific-popup.min.js'
+		'app/libs/magnific_popup/jquery.magnific-popup.min.js',
+		'app/libs/animsition/animsition.min.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())

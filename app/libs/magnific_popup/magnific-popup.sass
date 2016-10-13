@@ -339,3 +339,27 @@ img.mfp-img
   .mfp-container
     padding-left: 6px
     padding-right: 6px
+
+/**
+ * Fade-move animation for second dialog
+
+/* at start
+
+.my-mfp-slide-bottom
+  .zoom-anim-dialog
+    opacity: 0
+    transition: all 0.2s ease-out
+    transform: translateY(-20px) perspective(600px) rotateX(10deg)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    transform: translateY(0) perspective(600px) rotateX(0)
+  &.mfp-removing .zoom-anim-dialog
+    opacity: 0
+    transform: translateY(-10px) perspective(600px) rotateX(10deg)
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
