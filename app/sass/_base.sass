@@ -114,27 +114,22 @@ a
 	@media only screen and (max-width : 480px)
 		padding-bottom: 10px
 
-html.js .loader
-	background: none repeat scroll 0 0 #ffffff
-	bottom: 0
-	height: 100%
-	left: 0
-	position: fixed
-	right: 0
-	top: 0
-	width: 100%
-	z-index: 9999
+@keyframes fadeIn
+  0%
+    opacity: 0
 
-html.js .loader_inner
-	background-image: url("../img/preloader.gif")
-	background-size: cover
-	background-repeat: no-repeat
-	background-position: center center
-	background-color: #fff
-	height: 60px
-	width: 60px
-	margin-top: -30px
-	margin-left: -30px
-	left: 50%
-	top: 50%
-	position: absolute
+  100%
+    opacity: 1
+
+.m-scene
+	.scene_element
+		animation-duration: 0.45s
+		transition-timing-function: ease-in
+		animation-fill-mode: both
+
+	.scene_element--fadein
+		animation-name: fadeIn
+
+	&.is-exiting
+		.scene_element
+	  	animation-direction: alternate-reverse

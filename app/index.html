@@ -25,7 +25,6 @@
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
 	<!-- Load Fonts CSS Start -->
-	<link rel="stylesheet" href="/libs/animsition/animsition.min.css">
 	<script>
 		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
 		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
@@ -53,10 +52,13 @@
 	<!-- Custom Browsers Color End -->
 
 </head>
-<body class="animsition">
+<body>
 
-	<div class="form_wrapper_pop mfp-hide">
-		<div class="form_pop">
+	<div id="main" class="body_wrapper m-scene">
+
+		<div class="form_wrapper_pop mfp-hide">
+
+			<div class="form_pop">
 			<form action="" autocomplete="off" id="form">
 
 				<h3>Закажи консультацию нашего мастера прямо сейчас</h3>
@@ -68,31 +70,398 @@
 
 			</form>
 		</div>
-	</div>
 
-	<div class="body_wrapper">
+		</div>
 
-		<div class="head_wrapper_lp">
+		<div class="scene_element scene_element--fadein">
 
-			<header>
+			<div class="head_wrapper_lp">
+
+				<header>
+					<div class="container">
+
+						<div class="logo_wrapper col-xs-6 col-sm-4 col-md-3">
+							<a href="index.html" class="logo">
+							</a>
+						</div>
+
+						<!-- mob menu -->
+						<div class="mob_menu_button_wrapper">
+							<a href="#" class="mob_menu_button">Меню</a>
+						</div>
+
+						<a href="#" class="close_icon">
+							<img src="../img/ic_close.svg" alt=""/>
+						</a>
+						<!-- mob menu end -->
+
+						<nav class="head_nav col-sm-4 col-md-3">
+							<a href="index.html">Главная</a>
+							<a href="catalog.html">Каталог</a>
+							<a href="prices.html">Цены</a>
+							<a href="articles.html">Статьи</a>
+							<a href="contacts.html">Контакты</a>
+						</nav>
+
+						<div class="phone_wrapper col-md-3">
+
+							<img src="../img/ic_cicle_phone_white.svg" class="ic_phone">
+
+							<ul class="phones">
+								<li>(097) 823 32 39</li>
+								<li>(097) 823 32 39</li>
+							</ul>
+
+						</div>
+
+						<div class="btn_cta_wrapper hidden-xs col-sm-4 col-md-3">
+
+							<input type="button" href=".form_wrapper_pop" class="btn_cta" value="Заказать консультацию">
+
+						</div>
+
+					</div>
+				</header>
+
+				<div class="head_content_wrapper">
+
+					<h1 class="header_title">Изготовляем двери, кухни,<br> лестницы и мебель из<br> натурального дерева</h1>
+
+				</div>
+
+				<img src="../img/ic_mouse.svg" class="scroll_mouse">
+
+			</div>
+			<div class="our_profile">
 				<div class="container">
+					<div class="row">
 
-					<div class="logo_wrapper col-xs-6 col-sm-4 col-md-3">
-						<a href="index.html" class="logo">
+						<h1 col-md-12>Наш профиль</h1>
+
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+		          <div class="item_vertical">
+
+								<div class="img_wrapper">
+									<img src="../img/ic_doors.svg" class="img_lp">
+								</div>
+
+								<div class="content">
+
+									<h3>Межкомнатные и входные двери</h3>
+
+									<p style="margin-bottom: 30px;">Высокочественные двери из массива дерева дуба, ясеня, сосны</p>
+
+									<a ="go_galery" href="catalog.html" class="second-btn">Перейти в каталог</a>
+
+								</div>
+		          </div>
+			      </div>
+
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+		          <div class="item_vertical">
+
+								<div class="img_wrapper">
+		              <img src="../img/ic_furniture.svg" class="img_lp">
+								</div>
+
+								<div class="content">
+
+									<h3>Мебель</h3>
+									<p style="margin-bottom: 30px;">Кухни, гостиные комнаты, спальни, стенки, шкафы, столы, стулья, детские кровати</p>
+									<a ="go_galery" href="catalog.html" class="second-btn">Перейти в каталог</a>
+
+								</div>
+		          </div>
+			      </div>
+
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+		          <div class="item_vertical">
+
+								<div class="img_wrapper">
+									<img src="../img/ic_stairs.svg" class="img_lp">
+								</div>
+
+								<div class="content">
+
+									<h3>Лестницы</h3>
+									<p style="margin-bottom: 30px;">Изготавливаются только из высококачественного дерева по индивидуальному заказу</p>
+									<a ="go_galery" href="catalog.html" class="second-btn">Перейти в каталог</a>
+
+								</div>
+		          </div>
+			      </div>
+
+					</div>
+				</div>
+			</div>
+			<div class="how_we_work">
+				<div class="container">
+					<div class="row">
+
+							<h1 col-md-12>Как мы работаем</h1>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+										<div class="img_wrapper">
+											<img src="../img/ic_old_phone.svg" class="img_lp">
+										</div>
+
+									<div class="content">
+
+										<h3>Консультация по телефону</h3>
+										<p>Наш менеджер вам перезвонит и ответит на все интересующие вас вопросы</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+									<div class="img_wrapper">
+										<img src="../img/ic_measure.svg" class="img_lp">
+									</div>
+
+									<div class="content">
+
+										<h3>Выезд на замер</h3>
+										<p>Мастер выедет к вам домой, чтобы точно произвести замер, учитывая все сложности ремонта, проконсультирует и поможет правильно подобрать модель</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+									<div class="img_wrapper">
+										<img src="../img/ic_manufacture.svg" class="img_lp">
+									</div>
+
+									<div class="content">
+
+										<h3>Изготовление изделия</h3>
+										<p>Наши специалисты изготавливают изделие в течении 5-15 дней</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+									<div class="img_wrapper">
+										<img src="../img/ic_delivery.svg" class="img_lp">
+									</div>
+
+									<div class="content">
+
+										<h3>Доставка и монтаж изделия</h3>
+										<p>Мы доставляем заказ сами в Киев и Киевскую область, по Украине - Новой почтой</p>
+
+									</div>
+								</div>
+							</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="why_we">
+				<div class="container">
+					<div class="row">
+
+							<h1 col-md-12>Почему выберают нас</h1>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+									<div class="img_wrapper">
+										<img src="../img/ic_individual_project.svg" class="img_lp">
+									</div>
+
+									<div class="content">
+
+										<h3>Индивидуальный проект</h3>
+										<p>Мы изготовляем изделия любой сложности только под заказ учитывая пожелания каждого клиента</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+									<div class="img_wrapper">
+										<img src="../img/ic_wood.svg" class="img_lp">
+									</div>
+
+									<div class="content">
+
+										<h3>Только натуральное дерево</h3>
+										<p>Все изделия изготавливаются только с высококачественных пород дерева (дуб, ясень, клён, сосна, липа)</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+									<div class="img_wrapper">
+										<img src="../img/ic_guarantee.svg" class="img_lp">
+									</div>
+
+									<div class="content">
+
+										<h3>Гарантия 5 лет</h3>
+										<p>Мы дорожим нашими клиентами поэтому гарантируем высокое качество наших изделий</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+								<div class="item_vertical">
+
+									<div class="img_wrapper">
+										<img src="../img/ic_20.svg" class="img_lp">
+									</div>
+
+									<div class="content">
+
+										<h3>Более 20 лет на рынке</h3>
+										<p>Большой опыт работы с заказами самой разной сложности</p>
+
+									</div>
+								</div>
+							</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="faq">
+				<div class="container">
+					<div class="row">
+
+						<h1 col-md-12>Часто задаваемые вопросы</h1>
+
+						<dl class="accordion">
+
+							<dt>
+								<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+								<span class="arrow">
+									<img src="../img/ic_arrow.svg"/>
+								</span>
+							</dt>
+
+							<dd>Suspendisse potenti. In ullamcorper posuere nibh, in pretium metus porttitor vitae. Aenean felis libero, condimentum sagittis.</dd>
+
+				      <dt>
+								<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+								<span class="arrow">
+									<img src="../img/ic_arrow.svg"/>
+								</span>
+							</dt>
+
+				      <dd>Suspendisse potenti. In ullamcorper posuere nibh, in pretium metus porttitor vitae. Aenean felis libero, condimentum sagittis.</dd>
+
+				      <dt>
+								<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+								<span class="arrow">
+									<img src="../img/ic_arrow.svg"/>
+								</span>
+							</dt>
+
+				      <dd>Laoreet quis, auctor in orci. Ut gravida nibh vitae lorem egestas, vel commodo mi gravida. Curabitur elementum dolor id lacus.</dd>
+				    </dl>
+
+					</div>
+				</div>
+			</div>
+			<div class="statistic">
+				<div class="container">
+					<div class="row">
+
+							<h1 col-md-12>Статистика компании</h1>
+							<div class="col-md-4">
+								<div class="content">
+
+									<h1>3662</h1>
+									<p>Дверей изготовлено</p>
+
+								</div>
+				      </div>
+							<div class="col-md-4">
+								<div class="content">
+
+									<h1>768</h1>
+									<p>Клиентов обслужено</p>
+
+								</div>
+				      </div>
+							<div class="item_vertical col-md-4">
+								<div class="content">
+
+									<h1>20</h1>
+									<p>Лет на рынке</p>
+
+								</div>
+				      </div>
+
+					</div>
+				</div>
+			</div>
+			<div class="order_bottom_block">
+				<div class="container">
+					<div class="row">
+
+						<h1>Закажи консультацию нашего<br> мастера прямо сейчас</h1>
+						<p>Получи скидку 5% на первый заказ</p>
+
+						<div class="form_wrapper">
+							<form action="" autocomplete="off">
+
+						    <input type="text" class="name" name="name" placeholder="Ваше имя" required>
+
+						    <input type="text" class="phone" name="phone" placeholder="Ваш телефон" required>
+
+						    <input type="submit" class="submit_pop" value="Перезвоните мне">
+
+						  </form>
+						</div>
+
+							<div class="reviews">
+
+								<div class="review_item col-md-4">
+									<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
+									<h3>Надя</h3>
+									<p>
+										Заказывали кухню из ясеня в стиле модерн, остались довольны. Качество выполненных работ приятно впечатлило, советуем эту компанию своим знакомым								</p>
+									</p>
+								</div>
+								<div class="review_item hidden-xs hidden-sm col-md-4">
+									<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
+									<h3>Григорий</h3>
+									<p>
+										Двери прекрасно служат уже 10 лет, уверен прослужат еще также, если не дольше). Обслуживание: быстро, качественно, недорого (как для натурального дерева)
+									</p>
+								</div>
+								<div class="review_item hidden-xs hidden-sm col-md-4">
+									<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
+									<h3>Віталіна</h3>
+									<p>
+										Для нас з чоловіком, найважливішим фактором вибору меблів в дитячу кімнату – екологічно чисті матеріали. Саме тому, без роздумів обирали меблі із натурального дерева. Купили в «Wooddoors», дякуємо за обслуговування та якість								</p>
+									</p>
+								</div>
+
+							</div>
+
+					</div>
+				</div>
+			</div>
+			<footer>
+
+				<div class="foo_top container">
+
+					<div class="bottom_logo_wrapper col-xs-12 col-sm-3 col-md-3">
+						<a href="#" class="logo_black">
 						</a>
 					</div>
 
-					<!-- mob menu -->
-					<div class="mob_menu_button_wrapper">
-						<a href="#" class="mob_menu_button">Меню</a>
-					</div>
-
-					<a href="#" class="close_icon">
-						<img src="../img/ic_close.svg" alt=""/>
-					</a>
-					<!-- mob menu end -->
-
-					<nav class="head_nav col-sm-4 col-md-3">
+					<nav class="foo_nav_wrapper col-xs-12 col-sm-7 col-md-6">
 						<a href="index.html">Главная</a>
 						<a href="catalog.html">Каталог</a>
 						<a href="prices.html">Цены</a>
@@ -100,436 +469,65 @@
 						<a href="contacts.html">Контакты</a>
 					</nav>
 
-					<div class="phone_wrapper col-md-3">
+					<div class="social_icons_wrapper col-xs-12 col-sm-2 col-md-3">
 
-						<img src="../img/ic_cicle_phone_white.svg" class="ic_phone">
+						<div class="social_icons">
 
-						<ul class="phones">
-							<li>(097) 823 32 39</li>
-							<li>(097) 823 32 39</li>
-						</ul>
+							<a href="https://vk.com/">
+								<img src="../img/ic_vk.svg" class="ic_vk">
+							</a>
 
-					</div>
-
-					<div class="btn_cta_wrapper hidden-xs col-sm-4 col-md-3">
-
-						<input type="button" href=".form_wrapper_pop" class="btn_cta" value="Заказать консультацию">
-
-					</div>
-
-				</div>
-			</header>
-
-			<div class="head_content_wrapper">
-
-				<h1 class="header_title">Изготовляем двери, кухни,<br> лестницы и мебель из<br> натурального дерева</h1>
-
-			</div>
-
-			<img src="../img/ic_mouse.svg" class="scroll_mouse">
-
-		</div>
-
-		<div class="our_profile">
-			<div class="container">
-				<div class="row">
-
-					<h1 col-md-12>Наш профиль</h1>
-
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-	          <div class="item_vertical">
-
-							<div class="img_wrapper">
-								<img src="../img/ic_doors.svg" class="img_lp">
-							</div>
-
-							<div class="content">
-
-								<h3>Межкомнатные и входные двери</h3>
-
-								<p style="margin-bottom: 30px;">Высокочественные двери из массива дерева дуба, ясеня, сосны</p>
-
-								<a ="go_galery" href="catalog.html" class="second-btn">Перейти в каталог</a>
-
-							</div>
-	          </div>
-		      </div>
-
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-	          <div class="item_vertical">
-
-							<div class="img_wrapper">
-	              <img src="../img/ic_furniture.svg" class="img_lp">
-							</div>
-
-							<div class="content">
-
-								<h3>Мебель</h3>
-								<p style="margin-bottom: 30px;">Кухни, гостиные комнаты, спальни, стенки, шкафы, столы, стулья, детские кровати</p>
-								<a ="go_galery" href="catalog.html" class="second-btn">Перейти в каталог</a>
-
-							</div>
-	          </div>
-		      </div>
-
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-	          <div class="item_vertical">
-
-							<div class="img_wrapper">
-								<img src="../img/ic_stairs.svg" class="img_lp">
-							</div>
-
-							<div class="content">
-
-								<h3>Лестницы</h3>
-								<p style="margin-bottom: 30px;">Изготавливаются только из высококачественного дерева по индивидуальному заказу</p>
-								<a ="go_galery" href="catalog.html" class="second-btn">Перейти в каталог</a>
-
-							</div>
-	          </div>
-		      </div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="how_we_work">
-			<div class="container">
-				<div class="row">
-
-						<h1 col-md-12>Как мы работаем</h1>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-									<div class="img_wrapper">
-										<img src="../img/ic_old_phone.svg" class="img_lp">
-									</div>
-
-								<div class="content">
-
-									<h3>Консультация по телефону</h3>
-									<p>Наш менеджер вам перезвонит и ответит на все интересующие вас вопросы</p>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-								<div class="img_wrapper">
-									<img src="../img/ic_measure.svg" class="img_lp">
-								</div>
-
-								<div class="content">
-
-									<h3>Выезд на замер</h3>
-									<p>Мастер выедет к вам домой, чтобы точно произвести замер, учитывая все сложности ремонта, проконсультирует и поможет правильно подобрать модель</p>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-								<div class="img_wrapper">
-									<img src="../img/ic_manufacture.svg" class="img_lp">
-								</div>
-
-								<div class="content">
-
-									<h3>Изготовление изделия</h3>
-									<p>Наши специалисты изготавливают изделие в течении 5-15 дней</p>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-								<div class="img_wrapper">
-									<img src="../img/ic_delivery.svg" class="img_lp">
-								</div>
-
-								<div class="content">
-
-									<h3>Доставка и монтаж изделия</h3>
-									<p>Мы доставляем заказ сами в Киев и Киевскую область, по Украине - Новой почтой</p>
-
-								</div>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="why_we">
-			<div class="container">
-				<div class="row">
-
-						<h1 col-md-12>Почему выберают нас</h1>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-								<div class="img_wrapper">
-									<img src="../img/ic_individual_project.svg" class="img_lp">
-								</div>
-
-								<div class="content">
-
-									<h3>Индивидуальный проект</h3>
-									<p>Мы изготовляем изделия любой сложности только под заказ учитывая пожелания каждого клиента</p>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-								<div class="img_wrapper">
-									<img src="../img/ic_wood.svg" class="img_lp">
-								</div>
-
-								<div class="content">
-
-									<h3>Только натуральное дерево</h3>
-									<p>Все изделия изготавливаются только с высококачественных пород дерева (дуб, ясень, клён, сосна, липа)</p>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-								<div class="img_wrapper">
-									<img src="../img/ic_guarantee.svg" class="img_lp">
-								</div>
-
-								<div class="content">
-
-									<h3>Гарантия 5 лет</h3>
-									<p>Мы дорожим нашими клиентами поэтому гарантируем высокое качество наших изделий</p>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
-							<div class="item_vertical">
-
-								<div class="img_wrapper">
-									<img src="../img/ic_20.svg" class="img_lp">
-								</div>
-
-								<div class="content">
-
-									<h3>Более 20 лет на рынке</h3>
-									<p>Большой опыт работы с заказами самой разной сложности</p>
-
-								</div>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="faq">
-			<div class="container">
-				<div class="row">
-
-					<h1 col-md-12>Часто задаваемые вопросы</h1>
-
-					<dl class="accordion">
-
-						<dt>
-							<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-							<span class="arrow">
-								<img src="../img/ic_arrow.svg"/>
-							</span>
-						</dt>
-
-						<dd>Suspendisse potenti. In ullamcorper posuere nibh, in pretium metus porttitor vitae. Aenean felis libero, condimentum sagittis.</dd>
-
-			      <dt>
-							<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-							<span class="arrow">
-								<img src="../img/ic_arrow.svg"/>
-							</span>
-						</dt>
-
-			      <dd>Suspendisse potenti. In ullamcorper posuere nibh, in pretium metus porttitor vitae. Aenean felis libero, condimentum sagittis.</dd>
-
-			      <dt>
-							<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-							<span class="arrow">
-								<img src="../img/ic_arrow.svg"/>
-							</span>
-						</dt>
-
-			      <dd>Laoreet quis, auctor in orci. Ut gravida nibh vitae lorem egestas, vel commodo mi gravida. Curabitur elementum dolor id lacus.</dd>
-			    </dl>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="statistic">
-			<div class="container">
-				<div class="row">
-
-						<h1 col-md-12>Статистика компании</h1>
-						<div class="col-md-4">
-							<div class="content">
-
-								<h1>3662</h1>
-								<p>Дверей изготовлено</p>
-
-							</div>
-			      </div>
-						<div class="col-md-4">
-							<div class="content">
-
-								<h1>768</h1>
-								<p>Клиентов обслужено</p>
-
-							</div>
-			      </div>
-						<div class="item_vertical col-md-4">
-							<div class="content">
-
-								<h1>20</h1>
-								<p>Лет на рынке</p>
-
-							</div>
-			      </div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="order_bottom_block">
-			<div class="container">
-				<div class="row">
-
-					<h1>Закажи консультацию нашего<br> мастера прямо сейчас</h1>
-					<p>Получи скидку 5% на первый заказ</p>
-
-					<div class="form_wrapper">
-						<form action="" autocomplete="off">
-
-					    <input type="text" class="name" name="name" placeholder="Ваше имя" required>
-
-					    <input type="text" class="phone" name="phone" placeholder="Ваш телефон" required>
-
-					    <input type="submit" class="submit_pop" value="Перезвоните мне">
-
-					  </form>
-					</div>
-
-						<div class="reviews">
-
-							<div class="review_item col-md-4">
-								<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
-								<h3>Надя</h3>
-								<p>
-									Заказывали кухню из ясеня в стиле модерн, остались довольны. Качество выполненных работ приятно впечатлило, советуем эту компанию своим знакомым								</p>
-								</p>
-							</div>
-							<div class="review_item hidden-xs hidden-sm col-md-4">
-								<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
-								<h3>Григорий</h3>
-								<p>
-									Двери прекрасно служат уже 10 лет, уверен прослужат еще также, если не дольше). Обслуживание: быстро, качественно, недорого (как для натурального дерева)
-								</p>
-							</div>
-							<div class="review_item hidden-xs hidden-sm col-md-4">
-								<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
-								<h3>Віталіна</h3>
-								<p>
-									Для нас з чоловіком, найважливішим фактором вибору меблів в дитячу кімнату – екологічно чисті матеріали. Саме тому, без роздумів обирали меблі із натурального дерева. Купили в «Wooddoors», дякуємо за обслуговування та якість								</p>
-								</p>
-							</div>
+							<a href="https://facebook.com">
+								<img src="../img/ic_fb.svg" class="ic_fb">
+							</a>
 
 						</div>
-
-				</div>
-			</div>
-		</div>
-
-		<footer>
-
-			<div class="foo_top container">
-
-				<div class="bottom_logo_wrapper col-xs-12 col-sm-3 col-md-3">
-					<a href="#" class="logo_black">
-					</a>
-				</div>
-
-				<nav class="foo_nav_wrapper col-xs-12 col-sm-7 col-md-6">
-					<a href="index.html" class="animsition-link">Главная</a>
-					<a href="catalog.html" class="animsition-link">Каталог</a>
-					<a href="prices.html" class="animsition-link">Цены</a>
-					<a href="articles.html" class="animsition-link">Статьи</a>
-					<a href="contacts.html" class="animsition-link">Контакты</a>
-				</nav>
-
-				<div class="social_icons_wrapper col-xs-12 col-sm-2 col-md-3">
-
-					<div class="social_icons">
-
-						<a href="https://vk.com/">
-							<img src="../img/ic_vk.svg" class="ic_vk">
-						</a>
-
-						<a href="https://facebook.com">
-							<img src="../img/ic_fb.svg" class="ic_fb">
-						</a>
 
 					</div>
 
 				</div>
 
-			</div>
+				<div class="foo_bottom container">
 
-			<div class="foo_bottom container">
+					<div class="rights col-xs-12 col-sm-4 col-md-4">
+						<p>© 2016 Woodoors<br>
+								Все права защищены<br>
+								Создание и поддержка Ilya Zoria Studio</p>
+					</div>
 
-				<div class="rights col-xs-12 col-sm-4 col-md-4">
-					<p>© 2016 Woodoors<br>
-							Все права защищены<br>
-							Создание и поддержка Ilya Zoria Studio</p>
-				</div>
+					<div class="location_wrapper col-xs-12 col-sm-4 col-md-4">
 
-				<div class="location_wrapper col-xs-12 col-sm-4 col-md-4">
+						<div class="location">
 
-					<div class="location">
+							<img src="../img/ic_location.svg" class="ic_location">
+							<p>
+								Наш адрес:<br>
+								Украина, г.Тараща,<br>
+								ул. Степовая 15a
+							</p>
 
-						<img src="../img/ic_location.svg" class="ic_location">
-						<p>
-							Наш адрес:<br>
-							Украина, г.Тараща,<br>
-							ул. Степовая 15a
-						</p>
+						</div>
 
+					</div>
+
+					<div class="bottom_phone_wrapper col-xs-12 col-sm-4 col-md-4">
+
+						<div class="bottom_phone">
+
+							<img src="../img/ic_cicle_phone_black.svg">
+							<ul class="phones">
+								<li>(097) 823 32 39</li>
+								<li>(097) 823 32 39</li>
+							</ul>
+
+						</div>
 					</div>
 
 				</div>
 
-				<div class="bottom_phone_wrapper col-xs-12 col-sm-4 col-md-4">
+			</footer>
 
-					<div class="bottom_phone">
-
-						<img src="../img/ic_cicle_phone_black.svg">
-						<ul class="phones">
-							<li>(097) 823 32 39</li>
-							<li>(097) 823 32 39</li>
-						</ul>
-
-					</div>
-				</div>
-
-			</div>
-
-		</footer>
+		</div>
 
 	</div>
 

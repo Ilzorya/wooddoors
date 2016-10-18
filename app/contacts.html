@@ -54,107 +54,111 @@
 </head>
 <body>
 
-	<div class="form_wrapper_pop mfp-hide">
-		<div class="form_pop">
-			<form action="" autocomplete="off" id="form">
+	<div id="main" class="m-scene">
 
-				<h3>Закажи консультацию нашего мастера прямо сейчас</h3>
-				<p>Получи скидку 5% на первый заказ</p>
+		<div class="form_wrapper_pop mfp-hide">
+			<div class="form_pop">
+				<form action="" autocomplete="off" id="form">
 
-				<input type="text" class="name_pop" name="name" placeholder="Ваше имя" required>
-				<input type="text" class="phone_pop" name="phone" placeholder="Ваш телефон" required>
-				<input type="submit" class="submit_pop" value="Перезвоните мне">
+					<h3>Закажи консультацию нашего мастера прямо сейчас</h3>
+					<p>Получи скидку 5% на первый заказ</p>
 
-			</form>
+					<input type="text" class="name_pop" name="name" placeholder="Ваше имя" required>
+					<input type="text" class="phone_pop" name="phone" placeholder="Ваш телефон" required>
+					<input type="submit" class="submit_pop" value="Перезвоните мне">
+
+				</form>
+			</div>
 		</div>
-	</div>
-	
-	<div class="contacts_wrapper">
 
-		<header>
+		<div class="contacts_wrapper scene_element scene_element--fadein">
+
+			<header>
+				<div class="container">
+
+					<div class="logo_wrapper col-xs-6 col-sm-4 col-md-3">
+						<a href="index.html" class="logo">
+						</a>
+					</div>
+
+					<!-- mob menu -->
+					<div class="mob_menu_button_wrapper">
+						<a href="#" class="mob_menu_button">Меню</a>
+					</div>
+
+					<a href="#" class="close_icon">
+						<img src="../img/ic_close.svg" alt=""/>
+					</a>
+					<!-- mob menu end -->
+
+					<nav class="head_nav col-sm-4 col-md-3">
+						<a href="index.html">Главная</a>
+						<a href="catalog.html">Каталог</a>
+						<a href="prices.html">Цены</a>
+						<a href="articles.html">Статьи</a>
+						<a href="contacts.html">Контакты</a>
+					</nav>
+
+					<div class="phone_wrapper col-md-3">
+
+						<img src="../img/ic_cicle_phone_white.svg" class="ic_phone">
+
+						<ul class="phones">
+							<li>(097) 823 32 39</li>
+							<li>(097) 823 32 39</li>
+						</ul>
+
+					</div>
+
+					<div class="btn_cta_wrapper hidden-xs col-sm-4 col-md-3">
+
+						<input type="button" href=".form_wrapper_pop" class="btn_cta" value="Заказать консультацию">
+
+					</div>
+
+				</div>
+			</header>
+
 			<div class="container">
 
-				<div class="logo_wrapper col-xs-6 col-sm-4 col-md-3">
-					<a href="index.html" class="logo">
-					</a>
-				</div>
+	      <div class="contact_form">
 
-				<!-- mob menu -->
-				<div class="mob_menu_button_wrapper">
-					<a href="#" class="mob_menu_button">Меню</a>
-				</div>
+	        <div class="contact_form_wrapper">
 
-				<a href="#" class="close_icon">
-					<img src="../img/ic_close.svg" alt=""/>
-				</a>
-				<!-- mob menu end -->
+	    			<h1>Контакты</h1>
 
-				<nav class="head_nav col-sm-4 col-md-3">
-					<a href="index.html">Главная</a>
-					<a href="catalog.html">Каталог</a>
-					<a href="prices.html">Цены</a>
-					<a href="articles.html">Статьи</a>
-					<a href="contacts.html">Контакты</a>
-				</nav>
+	          <p>Наш адрес:<br>Украина, г.Тараща,<br>ул. Степовая, 15a</p>
 
-				<div class="phone_wrapper col-md-3">
+	          <p>Телефоны:<br>+38 (097) 240-00-30<br>+38 (044) 279-79-87</p>
 
-					<img src="../img/ic_cicle_phone_white.svg" class="ic_phone">
+	          <p>Електронная почта:<br>woodoors@gmail.com</p>
 
-					<ul class="phones">
-						<li>(097) 823 32 39</li>
-						<li>(097) 823 32 39</li>
-					</ul>
+	          <div class="contacts_social_icons_wrapper">
 
-				</div>
+	    				<div class="social_icons">
 
-				<div class="btn_cta_wrapper hidden-xs col-sm-4 col-md-3">
+	    					<a href="https://vk.com/">
+	    						<img src="../img/ic_vk_white.svg" class="ic_vk_white">
+	    					</a>
 
-					<input type="button" href=".form_wrapper_pop" class="btn_cta" value="Заказать консультацию">
+	    					<a href="https://facebook.com">
+	    						<img src="../img/ic_fb_white.svg" class="ic_fb_white">
+	    					</a>
 
-				</div>
+	    				</div>
+	    			</div>
 
+	        </div>
+	      </div>
 			</div>
-		</header>
 
-		<div class="container">
+			<div class="map_wrapper">
+	      <div id="map"></div>
+	    </div>
 
-      <div class="contact_form">
+	  </div>
 
-        <div class="contact_form_wrapper">
-
-    			<h1>Контакты</h1>
-
-          <p>Наш адрес:<br>Украина, г.Тараща,<br>ул. Степовая, 15a</p>
-
-          <p>Телефоны:<br>+38 (097) 240-00-30<br>+38 (044) 279-79-87</p>
-
-          <p>Електронная почта:<br>woodoors@gmail.com</p>
-
-          <div class="contacts_social_icons_wrapper">
-
-    				<div class="social_icons">
-
-    					<a href="https://vk.com/">
-    						<img src="../img/ic_vk_white.svg" class="ic_vk_white">
-    					</a>
-
-    					<a href="https://facebook.com">
-    						<img src="../img/ic_fb_white.svg" class="ic_fb_white">
-    					</a>
-
-    				</div>
-    			</div>
-
-        </div>
-      </div>
-		</div>
-
-		<div class="map_wrapper">
-      <div id="map"></div>
-    </div>
-
-  </div>
+	</div>
 
   <script>var scr = {"scripts":[
     {"src" : "js/libs.min.js", "async" : false},

@@ -54,7 +54,8 @@ gulp.task('libs', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick.min.js',
 		'app/libs/magnific_popup/jquery.magnific-popup.min.js',
-		'app/libs/animsition/animsition.min.js'
+		'app/libs/jquery.smoothState.min.js'
+		// 'app/libs/my.smoothState.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
