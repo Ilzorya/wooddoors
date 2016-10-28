@@ -20,21 +20,23 @@ footer
     position: relative
     top: 8px
     text-align: center
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline
+        float: none
+        a
+          font-size: em(15px)
+          text-decoration: none
+          letter-spacing: 0.3px
+          font-weight: 700
+          color: $black_font
+          padding-left: 2.5em
+          transition: 0.3s
 
-    a
-      color: white
-      font-size: em(15px)
-      text-decoration: none
-      letter-spacing: 0.3px
-      font-weight: 700
-      display: inline
-      float: none
-      color: $black_font
-      padding-left: 2.5em
-      transition: 0.3s
-
-      &:hover
-        color: $accent
+          &:hover
+            color: $accent
 
   .social_icons_wrapper
     .social_icons

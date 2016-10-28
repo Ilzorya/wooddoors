@@ -104,7 +104,7 @@ gulp.task('build', ['removedist', 'buildhtml', 'imagemin', 'sass', 'libs'], func
 
 	var buildFonts = gulp.src('app/fonts/**/*').pipe(gulp.dest('dist/fonts'));
 
-	var buildJs = gulp.src('app/js/**/*').pipe(gulp.dest('dist/js'));
+	// var buildJs = gulp.src('app/js/**/*').pipe(gulp.dest('dist/js'));
 
 });
 
