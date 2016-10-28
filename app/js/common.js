@@ -1,38 +1,5 @@
 $(document).ready(function($){
 
-  // 'use strict';
-  // var $page = $('#main'),
-  //     options = {
-  //       debug: true,
-  //       prefetch: true,
-  //       cacheLength: 2,
-  //       onStart: {
-  //         duration: 500, // Duration of our animation
-  //         render: function ($container) {
-  //           // Add your CSS animation reversing class
-  //           $container.addClass('is-exiting');
-  //           // Restart your animation
-  //           smoothState.restartCSSAnimations();
-  //         }
-  //       },
-  //       onReady: {
-  //         duration: 0,
-  //         render: function ($container, $newContent) {
-  //           // Remove your CSS animation reversing class
-  //           $container.removeClass('is-exiting');
-  //           // Inject the new content
-  //           $container.html($newContent);
-  //         }
-  //       },
-  //       // over a year ago, this was simply callback: function(){}
-  //       onAfter: function($container, $newContent){
-  //         $.readyFn.execute();
-  //       }
-  //     },
-  //     smoothState = $page.smoothState(options).data('smoothState');
-
-  // accordion
-
   var panels = $('.accordion > dd').hide();
 
   $('.accordion > dt').on('click', function(e) {
@@ -91,17 +58,31 @@ $(document).ready(function($){
 
 	//E-mail Ajax Send
 		//Documentation & Example: https://github.com/agragregra/uniMail
-	$("#form").submit(function() { //Change
+	$("form").submit(function() { //Change
 		jQuery.ajax({
 			type: "POST",
 			cache: false,
-			url: "./mail.php", //Change
+			url: "assets/mail.php", //Change
 			data: $(this).serialize()
 		}).done(function() {
-			alert("Thank you!");
+			// alert("Thank you!");
+      $('.order_sent_pop').slideDown('3000');
+        window.setTimeout(close, 3000);
+      function close() {
+        $('.order_sent_pop').slideUp('3000');
+      }
 		});
 		return false;
 	});
+
+  // $('.button_default').on('click', function(){
+  //   $('.order_sent_pop').slideDown('3000');
+  //     window.setTimeout(close, 3000);
+  // });
+  //
+  // function close() {
+  //   $('.order_sent_pop').slideUp('3000');
+  // }
 
 	//tabs_catalog
 	$('.tab_wrapper').click(function(){

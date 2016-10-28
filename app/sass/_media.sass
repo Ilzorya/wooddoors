@@ -173,16 +173,21 @@
 		margin-top: -20px
 		animation: menu_appear .3s ease-in-out
 
-		a
-			width: 100%
-			color: #fff
-			letter-spacing: 2.3px
-			line-height: 2
-			font-weight: 300
-			font:
-				size: em(36px)
-				weight: 700
-				family: $merriweather
+		ul
+			margin: 0
+			padding: 0
+			li
+			  display: block
+			  a
+					width: 100%
+					color: #fff
+					letter-spacing: 2.3px
+					line-height: 2
+					font-weight: 300
+					font:
+						size: em(36px)
+						weight: 700
+						family: $merriweather
 
 	// head end
 
@@ -216,7 +221,7 @@
 	 .rights
 			padding-bottom: 30px
 
-	.foo_top .foo_nav_wrapper a
+	.foo_top .foo_nav_wrapper ul li a
 		display: block
 		line-height: 4
 		width: 100%
@@ -269,6 +274,11 @@
 	    size: em(15px)
 
 @media only screen and (max-width : 480px)
+
+	//notification
+	.order_sent_pop
+		height: 80px
+		padding: 15px 25px
 
 	.head_content_wrapper h1
 		padding: 0
@@ -386,6 +396,9 @@
 
 	.accordion
 		padding: 0 30px 60px
+
+		dt
+			padding-right: 40px
 
 	//catalog
 

@@ -39,21 +39,26 @@
 
 	<div id="main" class="body_wrapper m-scene">
 
-		<div class="form_wrapper_pop mfp-hide">
+		<button type="button" name="button" class="button_default">Button</button>
 
-			<div class="form_pop">
-			<form action="" autocomplete="off" id="form">
-
-				<h3>Закажи консультацию нашего мастера прямо сейчас</h3>
-				<p>Получи скидку 5% на первый заказ</p>
-
-				<input type="text" class="name_pop" name="name" placeholder="Ваше имя" required>
-				<input type="text" class="phone_pop" name="phone" placeholder="Ваш телефон" required>
-				<input type="submit" class="submit_pop" value="Перезвоните мне">
-
-			</form>
+		<div class="order_sent_pop">
+			<span>Заявка отправлена. В ближайшее время с вами свяжется менеджер</span>
 		</div>
 
+
+		<div class="form_wrapper_pop mfp-hide">
+			<div class="form_pop">
+				<form action="" autocomplete="off" id="form">
+
+					<h3>Закажи консультацию нашего мастера прямо сейчас</h3>
+					<p>Получи скидку 5% на первый заказ</p>
+
+					<input type="text" class="name_pop" name="name" placeholder="Ваше имя" required>
+					<input type="text" class="phone_pop" name="phone" placeholder="Ваш телефон" required>
+					<input type="submit" class="submit_pop" value="Перезвоните мне">
+
+				</form>
+			</div>
 		</div>
 
 		<div class="scene_element scene_element--fadein">
@@ -70,20 +75,22 @@
 
 						<!-- mob menu -->
 						<div class="mob_menu_button_wrapper">
-							<a href="#" class="mob_menu_button">Меню</a>
+							<a href="javascript:void(0)" class="mob_menu_button">Меню</a>
 						</div>
 
-						<a href="#" class="close_icon">
+						<a href="javascript:void(0)" class="close_icon">
 							<img src="../img/ic_close.svg" alt=""/>
 						</a>
 						<!-- mob menu end -->
 
 						<nav class="head_nav col-sm-4 col-md-3">
-							<a href="index.html">Главная</a>
-							<a href="catalog.html">Каталог</a>
-							<a href="prices.html">Цены</a>
-							<a href="articles.html">Статьи</a>
-							<a href="contacts.html">Контакты</a>
+							<ul>
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="catalog.html">Каталог</a></li>
+								<li><a href="prices.html">Цены</a></li>
+								<li><a href="articles.html">Статьи</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
 						</nav>
 
 						<div class="phone_wrapper col-md-3">
@@ -409,21 +416,21 @@
 							<div class="reviews">
 
 								<div class="review_item col-md-4">
-									<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
+									<img src="../img/review_item/review_item_w1.jpg" alt="" />
 									<h3>Надя</h3>
 									<p>
 										Заказывали кухню из ясеня в стиле модерн, остались довольны. Качество выполненных работ приятно впечатлило, советуем эту компанию своим знакомым								</p>
 									</p>
 								</div>
 								<div class="review_item hidden-xs hidden-sm col-md-4">
-									<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
+									<img src="../img/review_item/review_item_m1.jpg" alt="" />
 									<h3>Григорий</h3>
 									<p>
 										Двери прекрасно служат уже 10 лет, уверен прослужат еще также, если не дольше). Обслуживание: быстро, качественно, недорого (как для натурального дерева)
 									</p>
 								</div>
 								<div class="review_item hidden-xs hidden-sm col-md-4">
-									<img src="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=80&d=identicon&r=g" alt="" />
+									<img src="../img/review_item/review_item_w2.jpg" alt="" />
 									<h3>Віталіна</h3>
 									<p>
 										Для нас з чоловіком, найважливішим фактором вибору меблів в дитячу кімнату – екологічно чисті матеріали. Саме тому, без роздумів обирали меблі із натурального дерева. Купили в «Wooddoors», дякуємо за обслуговування та якість								</p>
@@ -445,11 +452,13 @@
 					</div>
 
 					<nav class="foo_nav_wrapper col-xs-12 col-sm-7 col-md-6">
-						<a href="index.html">Главная</a>
-						<a href="catalog.html">Каталог</a>
-						<a href="prices.html">Цены</a>
-						<a href="articles.html">Статьи</a>
-						<a href="contacts.html">Контакты</a>
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="prices.html">Цены</a></li>
+							<li><a href="articles.html">Статьи</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
 					</nav>
 
 					<div class="social_icons_wrapper col-xs-12 col-sm-2 col-md-3">

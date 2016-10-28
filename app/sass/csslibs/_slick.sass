@@ -105,15 +105,30 @@
 // Default Variables
 
 $slick-font-family: "FontAwesome"
-$slick-loader-path: "./"
+$slick-loader-path: "../img/"
 $slick-arrow-color: $black_font
 $slick-dot-color: black
 $slick-dot-color-active: $black_font
 $slick-dot-size: 6px
 
 /* Slider */
-.slick-loading .slick-list
-  background: #fff url('$ slick-loader-path ajax-loader.gif') center center no-repeat
+
+.slick-slider
+    background: url('http://www.ajaxload.info/images/exemples/30.gif')
+
+.slick-slider .slick-list
+    opacity: 0
+    position: absolute
+
+.slick-slider.slick-initialized
+    background: none
+
+.slick-slider.slick-initialized .slick-list
+    opacity: 1
+    position: relative
+    transition: opacity 0.2s ease-in
+
+
 
 
 /* Arrows */
