@@ -41,14 +41,18 @@
 
 		<button type="button" name="button" class="button_default">Button</button>
 
-		<div class="order_sent_pop">
-			<span>Заявка отправлена. В ближайшее время с вами свяжется менеджер</span>
-		</div>
-
-
 		<div class="form_wrapper_pop mfp-hide">
 			<div class="form_pop">
-				<form action="" autocomplete="off" id="form">
+
+				<div class="order_sent_pop_wrapper">
+					<div class="order_sent_pop">
+						<img src="../img/ic_order_sent.svg" alt=""/>
+						<h3>Заявка отправлена</h3>
+						<span>В ближайшее время с вами свяжется менеджер</span>
+					</div>
+				</div>
+
+				<form action="" autocomplete="off" id="form1">
 
 					<h3>Закажи консультацию нашего мастера прямо сейчас</h3>
 					<p>Получи скидку 5% на первый заказ</p>
@@ -398,11 +402,22 @@
 				<div class="container">
 					<div class="row">
 
+						<button type="button" name="button" class="button_default2">Button2</button>
+
 						<h1>Закажи консультацию нашего<br> мастера прямо сейчас</h1>
 						<p>Получи скидку 5% на первый заказ</p>
 
 						<div class="form_wrapper">
-							<form action="" autocomplete="off">
+
+							<div class="order_sent_pop2_wrapper">
+								<div class="order_sent_pop2">
+									<img src="../img/ic_order_sent.svg" alt=""/>
+									<h3>Заявка отправлена</h3>
+									<span>В ближайшее время с вами свяжется менеджер</span>
+								</div>
+							</div>
+
+							<form action="" autocomplete="off" id="form2">
 
 						    <input type="text" class="name" name="name" placeholder="Ваше имя" required>
 

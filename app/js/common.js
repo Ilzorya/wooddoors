@@ -58,31 +58,51 @@ $(document).ready(function($){
 
 	//E-mail Ajax Send
 		//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		jQuery.ajax({
-			type: "POST",
-			cache: false,
-			url: "assets/mail.php", //Change
-			data: $(this).serialize()
-		}).done(function() {
-			// alert("Thank you!");
-      $('.order_sent_pop').slideDown('3000');
-        window.setTimeout(close, 3000);
-      function close() {
-        $('.order_sent_pop').slideUp('3000');
-      }
-		});
-		return false;
-	});
-
-  // $('.button_default').on('click', function(){
-  //   $('.order_sent_pop').slideDown('3000');
-  //     window.setTimeout(close, 3000);
-  // });
+	// $("#form1").submit(function() {
+	// 	jQuery.ajax({
+	// 		type: "POST",
+	// 		cache: false,
+	// 		url: "assets/mail.php",
+	// 		data: $(this).serialize()
+	// 	}).done(function() {
+	// 		// alert("Thank you!");
+  //     $("#form1").css({"visibility": "hidden"});
+  //     $(".order_sent_pop_wrapper").css({"display": "block"});
+  //     $('.mfp-close').on('click', function(){
+  //       $(".order_sent_pop_wrapper").css({"display": "none"});
+  //       $("#form1").css({"visibility": "visible"});
+  //     });
+	// 	});
+	// 	return false;
+	// });
   //
-  // function close() {
-  //   $('.order_sent_pop').slideUp('3000');
-  // }
+  // $("#form2").submit(function() {
+  //   jQuery.ajax({
+  //     type: "POST",
+  //     cache: false,
+  //     url: "assets/mail.php",
+  //     data: $(this).serialize()
+  //   }).done(function() {
+  //     // alert("Thank you!");
+  //     $("#form2").css({"visibility": "hidden"});
+  //     $(".order_sent_pop2_wrapper").css({"display": "block"});
+  //   });
+  //   return false;
+  // });
+
+  $('.button_default').on('click', function(){
+    $("#form1").css({"visibility": "hidden"});
+    $(".order_sent_pop").css({"display": "block"});
+    $('.mfp-close').on('click', function(){
+      $(".order_sent_pop").css({"display": "none"});
+      $("#form1").css({"visibility": "visible"});
+    });
+  });
+
+  $('.button_default2').on('click', function(){
+    $("#form2").css({"visibility": "hidden"}, 1000);
+    $(".order_sent_pop2_wrapper").css({"display": "block"}, 1000);
+  });
 
 	//tabs_catalog
 	$('.tab_wrapper').click(function(){
@@ -93,5 +113,5 @@ $(document).ready(function($){
 
 			$(this).addClass('current');
 			$("#"+tab_id).addClass('gallery_selected');
-	})
+	});
 });
