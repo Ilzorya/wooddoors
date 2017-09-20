@@ -6,6 +6,6 @@ What was done:
 - develop responsive website
 - landing on CMS Modx
 
-Presentation: behance.net/gallery/44748881/Wooddoors
+Presentation: https://www.behance.net/gallery/44748881/Wooddoors-Branding-Web-site
 
-Live: wooddoors.com.ua
+Live: http://wooddoors.com.ua/
